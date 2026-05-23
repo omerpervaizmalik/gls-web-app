@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://getlegalsolution.com/sitemap.xml

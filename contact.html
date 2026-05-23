@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Best Tax Consultant & Lawyer in Lahore | Get Legal Solution</title>
+    <meta name="description" content="Contact Get Legal Solution for expert legal and tax advice in Lahore. Reach out to the best corporate lawyers and tax consultants for consultations.">
+    <meta name="keywords" content="Contact Lawyer Lahore, Tax Consultant Lahore, Green Town Law Office, Legal Advice Pakistan, FBR Tax Filing help">
+    <link rel="canonical" href="https://getlegalsolution.com/contact.html" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact Us | Best Tax Consultant & Lawyer in Lahore | Get Legal Solution">
+    <meta property="og:description" content="Reach out for professional legal and tax services in Lahore. We are here to help.">
+    <meta property="og:url" content="https://getlegalsolution.com/contact.html">
+    <meta property="og:image" content="https://getlegalsolution.com/logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            padding: 10rem 0 4rem;
+            text-align: center;
+            background: radial-gradient(circle at center, var(--bg-dark), var(--bg-darker));
+            position: relative;
+        }
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold-primary);
+        }
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding: 4rem 0;
+            min-height: 60vh;
+        }
+        
+        .contact-info-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            padding: 3rem;
+            position: relative;
+        }
+        .contact-info-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 4px; height: 100%;
+            background: var(--gold-primary);
+        }
+        
+        .info-block {
+            margin-bottom: 2.5rem;
+        }
+        .info-block h3 {
+            font-size: 1.4rem;
+            color: var(--gold-primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .info-block p {
+            color: var(--text-white);
+            font-size: 1.1rem;
+            padding-left: 2rem;
+            line-height: 1.6;
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--glass-border);
+            color: var(--text-white);
+            padding: 1rem 1.5rem;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+            box-shadow: 0 0 10px rgba(255, 204, 0, 0.1);
+        }
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .map-container {
+            margin-top: 4rem;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            background: var(--glass-bg);
+            position: relative;
+            height: 450px;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            filter: grayscale(0.2) invert(0.05);
+        }
+        .map-overlay {
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+            max-width: 300px;
+            z-index: 10;
+        }
+        .map-overlay h4 {
+            color: var(--gold-primary);
+            margin-bottom: 0.5rem;
+            font-family: 'Cinzel', serif;
+        }
+        .map-overlay p {
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            color: var(--text-white);
+        }
+
+        @media (max-width: 900px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .map-container {
+                height: 350px;
+            }
+            .map-overlay {
+                left: 1rem;
+                bottom: 1rem;
+                right: 1rem;
+                max-width: none;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo-link"><img src="logo.png" alt="GET LEGAL SOLUTION" style="max-height: 45px;"></a>
+            <button class="menu-btn" id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links" style="white-space: nowrap;">
+    <li><a href="index.html">Home</a></li>
+    <li>
+        <a href="about-us.html" class="nav-link-main">
+            About Us <span class="chevron"></span>
+        </a>
+        <div class="mega-menu" style="width: min(700px, 95vw);">
+            <div class="mega-container" style="grid-template-columns: 1fr 1fr;">
+                <div class="mega-column">
+                    <span class="mega-label">Our Firm</span>
+                    <a href="about-us.html#who-we-are" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-landmark"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Who We Are</span>
+                            <span class="mega-desc">Our story, mission, and vision for legal excellence.</span>
+                        </div>
+                    </a>
+                    <a href="attorneys.html" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-user-tie"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Our Attorneys</span>
+                            <span class="mega-desc">Meet the expert legal minds behind our success.</span>
+                        </div>
+                    </a>
+                    <a href="our-partners.html" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Our Partners</span>
+                            <span class="mega-desc">Strategic alliances that strengthen our legal reach.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="mega-column">
+                    <span class="mega-label">Resources</span>
+                    <a href="relevant-laws.html" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Relevant Laws</span>
+                            <span class="mega-desc">Comprehensive database of Pakistani statutes.</span>
+                        </div>
+                    </a>
+                    <a href="testimonials.html" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-comment-dots"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Client Feedback</span>
+                            <span class="mega-desc">What our corporate and individual clients say.</span>
+                        </div>
+                    </a>
+                    <a href="our-happy-clients.html" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-face-smile"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Happy Clients</span>
+                            <span class="mega-desc">Celebrating the success of our registered businesses.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <a href="services.html" class="nav-link-main">
+            Practice Areas <span class="chevron"></span>
+        </a>
+        <div class="mega-menu">
+            <div class="mega-container">
+                <div class="mega-column">
+                    <span class="mega-label">Corporate & Taxation</span>
+                    <a href="services.html?category=Company Registration" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-landmark"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Corporate & Legal</span>
+                            <span class="mega-desc">SEC, Sole Proprietor, and LLP registrations for businesses.</span>
+                        </div>
+                    </a>
+                    <a href="services.html?category=Tax Services" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Taxation Services</span>
+                            <span class="mega-desc">Income tax filing, sales tax registration, and FBR compliance.</span>
+                        </div>
+                    </a>
+                    <a href="services.html?category=PRA Punjab Revenue Authority" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-building"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Punjab Revenue (PRA)</span>
+                            <span class="mega-desc">Services for Punjab Revenue Authority tax and compliance.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="mega-column">
+                    <span class="mega-label">IP & Finance</span>
+                    <a href="services.html?category=IPO" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Intellectual Property</span>
+                            <span class="mega-desc">Trademark, Copyright, and Patent registrations with IPO.</span>
+                        </div>
+                    </a>
+                    <a href="services.html?category=Accounting & Finance" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-chart-column"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Accounting & Finance</span>
+                            <span class="mega-desc">Statutory auditing, bookkeeping, and financial planning.</span>
+                        </div>
+                    </a>
+                    <a href="services.html?category=Drafting Services" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-file-signature"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Drafting Services</span>
+                            <span class="mega-desc">Legal drafting, contracts, and power of attorney.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="mega-featured">
+                    <div class="featured-card">
+                        <img src="featured-services.png" alt="Featured Service" class="featured-img" onerror="this.src='https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=300'">
+                        <div class="featured-title">Book a Consultation</div>
+                        <div class="featured-text">Speak with our expert attorneys today to secure your business future.</div>
+                        <a href="contact.html" class="btn btn-primary" style="padding: 0.6rem 1rem; font-size: 0.8rem;">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mega-footer">
+                <div class="mega-foot-links">
+                    <a href="tel:+923014991700" class="mega-foot-link"><i class="fa-solid fa-phone"></i> 0301-4991700</a>
+                    <a href="mailto:info@getlegalsolution.com" class="mega-foot-link"><i class="fa-solid fa-envelope"></i> info@getlegalsolution.com</a>
+                </div>
+                <div class="mega-foot-tagline" style="font-size: 0.75rem; color: var(--gold-primary); opacity: 0.8; letter-spacing: 1px;">PREMIUM LEGAL EXCELLENCE</div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <a href="other-services.html" class="nav-link-main">
+            Other Services <span class="chevron"></span>
+        </a>
+        <div class="mega-menu">
+            <div class="mega-container">
+                <div class="mega-column">
+                    <span class="mega-label">Litigation & Advocacy</span>
+                    <a href="other-services.html?service=civil-laws" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Civil Laws</span>
+                            <span class="mega-desc">Property disputes, contract enforcement, and civil litigation.</span>
+                        </div>
+                    </a>
+                    <a href="other-services.html?service=criminal-laws" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Criminal Defense</span>
+                            <span class="mega-desc">Expert representation in criminal trials and bail matters.</span>
+                        </div>
+                    </a>
+                    <a href="other-services.html?service=nab-cases" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-landmark"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">NAB & Anti-Corruption</span>
+                            <span class="mega-desc">Specialized defense in high-stakes corruption and NAB cases.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="mega-column">
+                    <span class="mega-label">Family & Notary</span>
+                    <a href="other-services.html?service=family-laws" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-user-group"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Family Laws</span>
+                            <span class="mega-desc">Divorce, child custody, and inheritance matters.</span>
+                        </div>
+                    </a>
+                    <a href="other-services.html?service=notary-services" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Notary Public</span>
+                            <span class="mega-desc">Official attestation, affidavits, and document verification.</span>
+                        </div>
+                    </a>
+                    <a href="other-services.html?service=oath-services" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-scroll"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Oath Commissioner</span>
+                            <span class="mega-desc">Certified oath services and legal declarations.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="mega-featured">
+                    <div class="featured-card">
+                        <img src="featured-litigation.png" alt="Litigation" class="featured-img" onerror="this.src='https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=300'">
+                        <div class="featured-title">Need Urgent Help?</div>
+                        <div class="featured-text">Our litigation team is available for emergency legal support and bail assistance.</div>
+                        <a href="https://wa.me/923014991700" class="btn btn-primary" style="padding: 0.6rem 1rem; font-size: 0.8rem; background: #25D366; border-color: #25D366; color: white;">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mega-footer">
+                <div class="mega-foot-links">
+                    <a href="tel:+923014991700" class="mega-foot-link"><i class="fa-solid fa-headset"></i> 24/7 Support</a>
+                    <a href="contact.html" class="mega-foot-link"><i class="fa-solid fa-location-dot"></i> Visit Our Office</a>
+                </div>
+                <div class="mega-foot-tagline" style="font-size: 0.75rem; color: var(--gold-primary); opacity: 0.8; letter-spacing: 1px;">YOUR TRUSTED LEGAL PARTNER</div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <a href="documentary-requirements.html" class="nav-link-main">
+            Requirements <span class="chevron"></span>
+        </a>
+        <div class="mega-menu" style="width: min(800px, 95vw);">
+            <div class="mega-container" style="grid-template-columns: 1fr 1fr;">
+                <div class="mega-column">
+                    <span class="mega-label">Business Checklists</span>
+                    <a href="documentary-requirements.html" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Partnership (AOP)</span>
+                            <span class="mega-desc">Documents needed for Registrar of Firms registration.</span>
+                        </div>
+                    </a>
+                    <a href="documentary-requirements.html" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-building"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Pvt Ltd Company</span>
+                            <span class="mega-desc">SECP requirements for private limited incorporation.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="mega-column">
+                    <span class="mega-label">Compliance</span>
+                    <a href="documentary-requirements.html" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-file-alt"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">Sales Tax / GST</span>
+                            <span class="mega-desc">Registration documents for FBR Sales Tax (STRN).</span>
+                        </div>
+                    </a>
+                    <a href="documentary-requirements.html" class="mega-item">
+                        <div class="mega-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <div class="mega-info">
+                            <span class="mega-title">IPO Copyright</span>
+                            <span class="mega-desc">Requirements for trademark and brand protection.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="mega-footer">
+                <a href="documentary-requirements.html" class="mega-foot-link" style="margin: 0 auto;"><i class="fa-solid fa-clipboard-list"></i> VIEW ALL DOCUMENTARY REQUIREMENTS</a>
+            </div>
+        </div>
+    </li>
+    <li><a href="blogs.html">Blogs</a></li>
+    <li><a href="law-untold.html">Law Untold</a></li>
+    <li class="nav-contact-wrapper">
+        <a href="tel:+923014991700" class="nav-phone">
+            <span class="phone-icon"><i class="fa-solid fa-phone"></i></span> 0301-4991700
+        </a>
+        <a href="https://portal.getlegalsolution.com" target="_blank" class="btn btn-portal">
+            <i class="fa-solid fa-user-shield"></i> Client Portal
+        </a>
+        <a href="contact.html" class="btn btn-outline-nav">Contact Us</a>
+    </li>
+</ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container animate-on-scroll up">
+            <h1>Contact Us</h1>
+            <p>Connect with our legal experts at any of our Lahore locations for a confidential consultation.</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="contact-layout">
+            
+            <!-- Contact Info -->
+            <div class="contact-info-card animate-on-scroll left" style="display: flex; flex-direction: column; justify-content: center;">
+                <div id="dynamic-contact-content" style="white-space: pre-wrap; font-size: 1.1rem; line-height: 1.8; color: var(--text-white);">
+                    Loading contact information...
+                </div>
+            </div>
+
+
+            <!-- Contact Form -->
+            <div class="glass-card animate-on-scroll right">
+                <h2 style="color: var(--gold-primary); margin-bottom: 2rem; font-family: 'Cinzel', serif;">Submit an Inquiry</h2>
+                <form class="contact-form" id="whatsapp-form">
+                    <div>
+                        <input type="text" id="wa-name" placeholder="Full Name or Company Name" required>
+                    </div>
+                    <div>
+                        <input type="email" id="wa-email" placeholder="Corporate Email Address" required>
+                    </div>
+                    <div>
+                        <input type="tel" id="wa-phone" placeholder="Phone Number" required>
+                    </div>
+                    <div>
+                        <input type="text" id="wa-subject" placeholder="Nature of Legal Inquiry (e.g. IPO, Taxation)" required>
+                    </div>
+                    <div>
+                        <textarea id="wa-message" placeholder="Provide brief details about how we can assist you..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Send Confidential Message</button>
+                </form>
+            </div>
+            
+            <script>
+                // Inject validation styles
+                (function() {
+                    var s = document.createElement('style');
+                    s.textContent = [
+                        '.field-error{display:none;color:#ff6b6b;font-size:0.82rem;margin-top:4px;padding-left:4px;font-family:Inter,sans-serif;}',
+                        '.input-invalid{border-color:#ff6b6b!important;box-shadow:0 0 8px rgba(255,107,107,0.25)!important;}',
+                        '#form-success{display:none;text-align:center;padding:1.2rem;background:rgba(39,174,96,0.15);border:1px solid #27ae60;border-radius:6px;color:#2ecc71;font-size:0.95rem;margin-top:1rem;}'
+                    ].join('');
+                    document.head.appendChild(s);
+                })();
+
+                // Insert error spans and success div after DOM ready
+                document.addEventListener('DOMContentLoaded', function() {
+                    var fields = [
+                        { id: 'wa-name',    msg: 'Please enter your full name or company name.' },
+                        { id: 'wa-email',   msg: 'Please enter a valid email address.' },
+                        { id: 'wa-phone',   msg: 'Please enter a contact phone number.' },
+                        { id: 'wa-subject', msg: 'Please describe the nature of your inquiry.' },
+                        { id: 'wa-message', msg: 'Please provide some details about how we can help.' }
+                    ];
+                    fields.forEach(function(f) {
+                        var el = document.getElementById(f.id);
+                        if (!el) return;
+                        var span = document.createElement('span');
+                        span.className = 'field-error';
+                        span.id = f.id + '-error';
+                        span.textContent = f.msg;
+                        el.parentNode.appendChild(span);
+                    });
+                    var btn = document.querySelector('#whatsapp-form button[type="submit"]');
+                    if (btn) {
+                        var successDiv = document.createElement('div');
+                        successDiv.id = 'form-success';
+                        successDiv.innerHTML = '<i class="fa-solid fa-circle-check"></i> Your message is ready — WhatsApp will open now.';
+                        btn.parentNode.insertBefore(successDiv, btn.nextSibling);
+                    }
+                });
+
+                document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var valid = true;
+
+                    function validate(id, checkFn) {
+                        var el = document.getElementById(id);
+                        var err = document.getElementById(id + '-error');
+                        var val = el ? el.value.trim() : '';
+                        if (!el) return;
+                        if (checkFn(val)) {
+                            el.classList.remove('input-invalid');
+                            if (err) err.style.display = 'none';
+                        } else {
+                            el.classList.add('input-invalid');
+                            if (err) err.style.display = 'block';
+                            valid = false;
+                        }
+                    }
+
+                    validate('wa-name',    function(v){ return v.length >= 2; });
+                    validate('wa-email',   function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); });
+                    validate('wa-phone',   function(v){ return v.length >= 7; });
+                    validate('wa-subject', function(v){ return v.length >= 3; });
+                    validate('wa-message', function(v){ return v.length >= 10; });
+
+                    if (!valid) return;
+
+                    var name    = document.getElementById('wa-name').value.trim();
+                    var email   = document.getElementById('wa-email').value.trim();
+                    var phone   = document.getElementById('wa-phone').value.trim();
+                    var subject = document.getElementById('wa-subject').value.trim();
+                    var message = document.getElementById('wa-message').value.trim();
+
+                    var text = 'New Legal Inquiry\n\nName: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nSubject: ' + subject + '\n\nDetails: ' + message;
+                    var url  = 'https://wa.me/923014991700?text=' + encodeURIComponent(text);
+
+                    var success = document.getElementById('form-success');
+                    if (success) success.style.display = 'block';
+
+                    setTimeout(function(){ window.open(url, '_blank'); }, 400);
+                });
+            </script>
+            
+        </div>
+
+        <!-- Google Map Section -->
+        <div class="map-container animate-on-scroll zoom">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d851.0735642657017!2d74.3082951!3d31.4335651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919012dace6afbd%3A0x15f05808efd93b95!2sPlot%20680%2C%20Sector%20D2%20Sector%20D%202%20Block%205%20Green%20Town%2C%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1774649036649!5m2!1sen!2s" loading="lazy"></iframe>
+            <div class="map-overlay">
+                <h4>Green Town Office</h4>
+                <p>Plot no 680, First Floor, Block no 5, Sector D2, Green Town, Lahore.</p>
+                <a href="https://www.google.com/maps/place/Plot+680,+Sector+D2+Sector+D+2+Block+5+Green+Town,+Lahore,+Pakistan/@31.4335651,74.3082951,19.75z/data=!4m15!1m8!3m7!1s0x3919012dace6afbd:0x15f05808efd93b95!2sPlot+680,+Sector+D2+Sector+D+2+Block+5+Green+Town,+Lahore,+Pakistan!3b1!8m2!3d31.4334449!4d74.3083633!16s%2Fg%2F11hbgbgvq_!3m5!1s0x3919012dace6afbd:0x15f05808efd93b95!8m2!3d31.4334449!4d74.3083633!16s%2Fg%2F11hbgbgvq_?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-primary btn-sm" style="font-size: 0.8rem; padding: 0.5rem 1rem;">Pin Location / Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61577499761747" target="_blank" class="social-icon" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/getlegalsolution/" target="_blank" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; <span id="year">2026</span> GET LEGAL SOLUTION. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Load Global JS and Database -->
+    <script src="content_db.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (typeof contentDB !== 'undefined') {
+                if (contentDB.contact && contentDB.contact["Contact Us"]) {
+                    const contactEl = document.getElementById('dynamic-contact-content');
+                    if (contactEl) {
+                        contactEl.textContent = contentDB.contact["Contact Us"];
+                    }
+                }
+
+                if (contentDB.footer && contentDB.footer["Quick Links"]) {
+                    const footerEl = document.querySelector('.footer .container');
+                    if (footerEl) {
+                        const linksRaw = contentDB.footer["Quick Links"].split('\n').filter(l => l.startsWith('>'));
+                        if (linksRaw.length > 0) {
+                            const linksHtml = linksRaw.map(l => {
+                                const text = l.replace('>', '').trim();
+                                return `<a href="https://iris.fbr.gov.pk/infosys/public/txplogin.xhtml" target="_blank" style="color: var(--gold-dim); margin: 0 10px; font-size: 0.8rem; text-decoration: none;">${text}</a>`;
+                            }).join(' | ');
+                            const linksDiv = document.createElement('div');
+                            linksDiv.style.marginTop = "1rem";
+                            linksDiv.innerHTML = linksHtml;
+                            footerEl.appendChild(linksDiv);
+                        }
+                    }
+                }
+            }
+            
+            // Set current year
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+    </script>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/923014991700" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="//code.tidio.co/acfgv2rrzlgyzesapsnlcwlfxahhftkm.js" async></script>
+
+    
+    
+    
+
+    <!-- Smart Assistant & Knowledge Base Integration -->
+    <script src="laws_db.js"></script>
+    <script src="requirements_db.js"></script>
+    <script src="content_db.js"></script>
+    <script src="assistant.js"></script>
+    <script src="tidio_config.js"></script>
+</body>
+</html>
