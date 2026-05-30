@@ -2,7 +2,6 @@ export default async function handler(req, res) {
   const VERIFY_TOKEN = process.env.WHATSAPP_VERIFY_TOKEN || 'my_secure_verify_token_123';
   const WHATSAPP_TOKEN = process.env.WHATSAPP_API_TOKEN;
 
-  // Handle Meta Verification (GET Request)
   if (req.method === 'GET') {
     const mode = req.query['hub.mode'];
     const token = req.query['hub.verify_token'];
@@ -16,7 +15,6 @@ export default async function handler(req, res) {
     }
   }
 
-  // Handle Incoming WhatsApp Messages (POST Request)
   if (req.method === 'POST') {
     try {
       const body = req.body;
@@ -30,7 +28,7 @@ export default async function handler(req, res) {
           body.entry[0].changes[0].value.messages[0]
         ) {
           const phone_number_id = body.entry[0].changes[0].value.metadata.phone_number_id;
-          const from = body.entry[0].changes[0].value.messages[0].from;
+          const from = body.entry[0].changes[0].value.messages[0].from; // The user's phone number
           const msg_body = body.entry[0].changes[0].value.messages[0].text.body;
 
           console.log(`Received message from ${from}: ${msg_body}`);
@@ -38,15 +36,25 @@ export default async function handler(req, res) {
           const responseText = "Hello! Our AI bot is currently being set up. We will reply to your message shortly.";
           
           if (WHATSAPP_TOKEN) {
-            await fetch(`https://graph.facebook.com/v17.0/${phone_number_id}/messages?access_token=${WHATSAPP_TOKEN}`, {
+            console.log("Sending reply with token...");
+            const response = await fetch(`https://graph.facebook.com/v20.0/${phone_number_id}/messages`, {
               method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
+              headers: { 
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${WHATSAPP_TOKEN}`
+              },
               body: JSON.stringify({
                 messaging_product: 'whatsapp',
                 to: from,
+                type: 'text',
                 text: { body: responseText },
               }),
             });
+
+            const data = await response.json();
+            console.log("Meta API Response:", data);
+          } else {
+            console.error("ERROR: WHATSAPP_API_TOKEN is missing in environment variables!");
           }
         }
         return res.status(200).send('EVENT_RECEIVED');
