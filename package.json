@@ -9,9 +9,23 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@langchain/community": "^1.1.28",
+    "@langchain/core": "^1.1.48",
+    "@langchain/google-genai": "^2.1.31",
+    "@langchain/textsplitters": "^1.0.1",
+    "@supabase/supabase-js": "^2.106.2",
+    "axios": "^1.16.1",
+    "cheerio": "^1.2.0",
+    "chromadb": "^3.4.3",
+    "dotenv": "^17.4.2",
+    "jodit-react": "^5.3.21",
+    "langchain": "^1.4.2",
+    "mammoth": "^1.12.0",
     "next": "16.2.6",
+    "pdf-parse": "^2.4.5",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "tesseract.js": "^7.0.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -21,6 +35,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
     "tailwindcss": "^4",
+    "tsx": "^4.22.3",
     "typescript": "^5"
   }
 }
