@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Pakistan Law Site</title>
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <!-- CSS
+    ================================================== -->
+    
+    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+    <link href="/css/customStyles.css" rel="stylesheet" />
+    <link href="/css/mainstyles.min.css" rel="stylesheet" />
+    <link href="/css/style_law.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/fixed_top_right_buttons.css" type="text/css" media="all">
+    <link href="/css/jquery.scrollbar.css" rel="stylesheet" />
+    
+    
+    <script src="/Scripts/jquery.min.js"></script>
+    
+    
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/js/Bootstrap-3-Typeahead-master/bootstrap3-typeahead.min.js"></script>
+    <script src="/js/jquery.scrollbar.js"></script>
+    <script src="/Scripts/common.js"></script>
+    
+    <script src="/Scripts/bootpag.min.js"></script>
+    
+    <script src="/Scripts/jquery.history.js"></script>
+    <link href="/css/chosen.css" rel="stylesheet" />
+    <script src="/js/chosen.jquery.min.js"></script>
+    <script src="/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="/Scripts/jquery.validate.js"></script>
+
+    <script src="/Scripts/jquery.validate.unobtrusive.js"></script>
+
+    <script src="/Scripts/jquery.highlight-5.js"></script>
+    
+    <script src="/Scripts/jquery.dataTables.min.js"></script>
+    <script src="/Scripts/dataTables.bootstrap.min.js"></script>
+    
+    
+    
+    <style>
+        @media (min-width: 691px) {
+            .advanced_search_inputs {
+                width: 29.5% !important;
+                margin-top: 10px;
+            }
+
+            #partySearch {
+                width: 41% !important;
+            }
+
+            #btn_hide_on_Citation {
+                display: table-cell;
+            }
+
+            .input-group-btn {
+                display: table-cell;
+            }
+        }
+        /*@media(min-width: 706px){
+            .advanced_search_inputs {
+                width: 29.5%!important;
+            }$("#btn_hide_on_Citation").css({ 'display': 'table-row', 'text-align': 'center' });
+            }*/
+        @media(max-width: 690px) {
+            #btn_hide_on_Citation {
+                display: table-row;
+                text-align: center;
+            }
+
+            .input-group-btn {
+                display: table-row;
+                text-align: center;
+            }
+
+            #partySearch {
+                width: 100% !important;
+            }
+
+            .advanced_search_inputs {
+                width: 100% !important;
+                border-right: 1px solid #ddd;
+                margin-bottom: 10px !important;
+            }
+
+            #citationCategory {
+                width: 50% !important;
+                margin-bottom: 10px !important;
+            }
+        .input-imp-long { display: none; }
+       
+            #yearSearch {
+                width: 100% !important;
+                margin-bottom: 10px !important;
+                border-right: 1px solid #ddd !important;
+            }
+
+            #codeOrPageSearch {
+                width: 100% !important;
+                border-right: 1px solid #ddd !important;
+                margin-bottom: 10px !important;
+            }
+
+            #bookSearch {
+                width: 100% !important;
+                border-right: 1px solid #ddd !important;
+                margin-bottom: 10px !important;
+            }
+
+            #caseLawYear {
+                width: 100% !important;
+                border-right: 1px solid #ddd !important;
+                margin-bottom: 10px !important;
+            }
+
+            #courtSearch {
+                width: 100% !important;
+                border-right: 1px solid #ddd !important;
+                margin-bottom: 10px !important;
+            }
+
+            .caseLaw {
+                border-radius: 0px !important;
+                border-left: 1px solid #008c33 !important;
+            }
+        }
+
+        @media (min-width: 992px) {
+            #content {
+                margin-bottom: 20px !important;
+            }
+        }
+
+        #searchtext .highlight {
+            background-color: #FFFF00;
+            color: #555;
+        }
+        /* enable absolute positioning */
+        .inner-addon {
+            position: relative;
+        }
+
+            /* style glyph */
+            .inner-addon .glyphicon {
+                position: absolute;
+                padding: 10px;
+                pointer-events: none;
+            }
+
+        /* align glyph */
+        .left-addon .glyphicon {
+            left: 0px;
+        }
+
+        .right-addon .glyphicon {
+            right: 0px;
+        }
+
+        /* add padding  */
+        .left-addon input {
+            padding-left: 30px;
+        }
+
+        .right-addon input {
+            padding-right: 30px;
+        }
+        .advancedSearchNoteSpan{
+            color: darkgreen;
+            font-size: 12px;
+            display: block;
+        }
+        .faqHeading{
+
+        }
+        .faqQuestion{
+            font-size: 13px;
+            color: #007229;
+            display: block;
+            font-weight: bold;
+        }
+        .faqAnswer{
+            font-size: 13px;
+            margin-bottom: 17px!important;
+            display: block;
+        }
+        /*div {
+            padding: 10px;
+        }*/
+    </style>
+    <style>
+        .modalunbookmark {
+        }
+
+        .modalbookmarked {
+        }
+
+        .modalbookmarklogo {
+            /*float: right;
+            width: 25px;
+            height: 25px;*/
+            cursor: pointer;
+        }
+
+        .modalbookmark-text {
+            color: #007229;
+            float: right;
+            padding: 2px 6px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="home layout-boxed sidebar-left">
+
+    
+    <div id="update_subscriber" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title updateSubscriberTitle">Update Subscriber</h4>
+                </div>
+                <div class="modal-body" id="subscriber_modal_body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal " id="ExceptionResponseScreen1" role="dialog">
+
+        <div class="modal-dialog">
+            <div class="modal-content modal-md">
+                <div class="modal-header">
+                    <button id="TopCloseButtonCreate" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+
+                    <h4 class="modal-title text-center" id="titleModalNewAppointment"></h4>
+
+                    <div class="userNameClientSide" style="display:none"></div>
+                    <div class="inner-addon right-addon xs_center_align" style="margin-bottom: 10px">
+                        
+                        <input name="query" id="query" type="text" size="30" maxlength="30" class="form-control case_description_modal_search_input" placeholder="Search text &quot;Exact Match&quot;">
+                        <input type="button" id="searchbtn_hit" value="Search" class="btn-success case_description_modal_search_btn" />
+                    </div>
+                    <div class="row" id="bookmarkoption" style="padding: 0px 20px">
+                        
+                        <span id="modalbookmarmessage" class="modalbookmark-text modalbookmarklogo" modalCaseName="">Bookmark this Case <span class="glyphicon glyphicon-bookmark" style="font-size: 14px; top: 3px"></span></span>
+                    </div>
+
+                </div>
+                <div class="modal-body case_description_modal_body">
+                    
+
+                    <div class="ExceptionMessageModalBody1" id="searchtext" style="margin-bottom: 70px">
+
+                    </div>
+                </div>
+                
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+
+    <div id="livesite_action_buttons" class="ls-font-family-T ls-font-size-T ls-zoom ls-overlay-T ls-desktop ls-theme-font-family ls-theme-font-size ls-animate-enter ls-visible ls-animate-hover" dir="ltr">
+        <div class="ls-actions ls-zoom-width ls-desktop">
+            <div class="ls-actions-C ls-desktop">
+                <a class="ls-action livesite-main ls-my-account-action-T ls-desktop livesite-icon-user glyphicon glyphicon-user ls-ab-action hidden-xs" data-origin="livesite_menu" href="/Login/GetCurrentUserInfo">
+                    <span class="ls-desktop"><em class="ls-action-text-T ls-desktop">My Account</em></span>
+                    <div class="ls-counter ls-counter-T ls-desktop ls-theme-counter"></div>
+                </a>
+                <div class="ls-welcome-box-C ls-hide-mobile ls-desktop ls-cwb-c"></div>
+                <a class="ls-action ls-action-T livesite-contact  ls-desktop ls-ab-action ls-theme-label glyphicon glyphicon-envelope" href="#" onclick="return feedBackForm()" target="" data-origin="livesite_menu" data-options=" ">
+                    <span class="ls-desktop"><em class="ls-action-text-T ls-desktop">Feedback</em></span>
+                </a>
+
+                <a class="ls-action ls-action-T livesite-call  ls-desktop livesite-icon-phone ls-ab-action ls-theme-label glyphicon glyphicon-home hidden-xs" href="#" target="" data-origin="livesite_menu" data-options="number:+92518446666">
+                    <span class="ls-desktop">
+                        <em class="ls-action-text-T ls-desktop" style="text-align: left!important">
+                            <b style="text-align: center; font-size: 16px!important; display: block">Customer Care Office</b>
+                            PLD Publishers<br />
+                            35-Nabha Road, Lahore, Pakistan<br />
+                            Phone: +92 (42) 37243601 / 37356228 / 37356287<br />
+                            Whatsapp: +92 (305) 999 15 24<br />
+                            Fax: +92 (42) 37243601 / 37238113<br />
+                            Email: info@pakistanlawsite.com<br />
+                           
+                        </em>
+                    </span>
+                </a>
+
+            </div>
+            <a class="ls-actions-close ls-action-text-T ls-icon-cancel livesite-action-buttons-hide ls-hide-desktop ls-desktop"></a>
+        </div>
+    </div>
+
+    <!-- Wrapper / Start -->
+    <div id="loadingScreen">
+        <img class="loadingIcon" src="/img/724.gif" />
+        <span id="loadingMsg">Please Wait</span>
+    </div>
+
+    <div id="page" class="hfeed site">
+
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row hidden-xs hidden-sm">
+                    <div class="col-md-4 margin-bottom-xs"> <a href="/Login/Check" rel="home" class="site-logo"><img src="/images/pakistanLawSite_title.png" style="width:294px; height:auto;" title="PakistanLawSite"></a> </div>
+                    <div id="header-widgets" class="col-md-8">
+                        <aside id="text-2" class="widget widget_text">
+                            <div class="textwidget"> <a href="#" class="site-logo" style="line-height:10px; display: inline-block"><img src="/images/img_logopld.jpg" style="margin-top:-10px; width:83px; height:83px;" title="Pld Publishers"></a></div>
+                        </aside>
+                    </div>
+                </div>
+                <div class="navigation-wrap under-navigation-activated">
+                    <nav id="masthead" class="navbar navbar-default site-navigation" role="banner">
+                        <div class="navbar-header">
+                            <button class="navbar-toggle" data-toggle="collapse" data-target=".main-navigation"><i class="fa fa-bars"></i></button>
+                            <a href="/Login/Check" rel="home" class="site-brand navbar-brand visible-xs visible-sm"> <img src="/images/pakistanlawsite_titlem.png" class="logo_tablet" title="PakistanLawSite"> </a>
+                            
+                        </div>
+                        <div id="site-navigation" class="collapse navbar-collapse main-navigation" role="navigation">
+                            <ul id="menu-main-menu" class="nav navbar-nav navbar-left">
+                                <li class="menu-home" id="home_navbar"><a href="/Login/Check">Home</a></li>
+                                <li id="words_navbar"><a href="/Login/WordsAndPhrases?type=words">Word &amp; Phrases</a> </li>
+                                <li id="legal_navbar"><a href="/Login/LegalTerms">Legal Terms</a> </li>
+                                <li id="maxim_navbar"><a href="/Login/Maxim?type=maxim">Maxims</a> </li>
+                                <li id="article_navbar"><a href="/Login/ArticlePage">Articles</a></li>
+                                <li id="topic_navbar"><a href="/Login/TopicPage">Topics</a></li>
+                                <li id="dictionary_navbar"><a href="/Login/DictionaryPage">Dictionary</a></li>
+                                <li id="bookmark_navbar"><a href="/Login/GetBookMarks">Saved Citations</a> </li>
+                                <li class="hidden-sm hidden-md hidden-lg"><a href="/Login/GetCurrentUserInfo">User Profile</a></li>
+
+                                <li class="hidden-sm hidden-md hidden-lg"><a href="/Login/ChangePassword">Change Password</a></li>
+                                <li class="hidden-sm hidden-md hidden-lg"><a href="/Login/Logout">Logout</a></li>
+                                
+                                <li class="dropdown hidden-xs hidden-sm hidden-md hidden-lg">
+                                    <a href="#" class="dropdown-toggle navbar_user_details_anchor" data-toggle="dropdown"><span class="glyphicon glyphicon-user" style="margin-right:5px"></span>sjdgkhan <b class="caret"></b></a>
+                                    <ul class="dropdown-menu navbar_user_details_dropdown_ul">
+                                        <li><a href="/Login/GetCurrentUserInfo">User Profile</a></li>
+                                        <li><a href="/Login/GetCurrentUserHistory">History</a></li>
+                                        <li><a href="/Login/ChangePassword">Change Password</a></li>
+                                        <li><a href="/Login/HelpPage">Help</a></li>
+                                        <li><a href="/Login/Logout">Logout</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav pull-right navbar_user_details_ul hidden-xs">
+                                <li class="dropdown ">
+                                    <a href="#" class="dropdown-toggle navbar_user_details_anchor" data-toggle="dropdown" style="font-weight: bold"><span class="glyphicon glyphicon-user" style="margin-right:5px"></span>sjdgkhan <b class="caret"></b></a>
+                                    <ul class="dropdown-menu navbar_user_details_dropdown_ul">
+                                        <li><a href="/Login/GetCurrentUserInfo">User Profile</a></li>
+                                        <li><a href="/Login/GetCurrentUserHistory">History</a></li>
+                                        <li><a href="/Login/ChangePassword">Change Password</a></li>
+                                        <li><a href="/Login/HelpPage">Help</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="/Login/Logout" style="color:#00a53c; font-weight:bold;">Logout</a></li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- Wrapper Start -->
+        
+        <!-- Wrapper End -->
+
+        <div id="content" class="site-content">
+            <div class="container">
+                <div class="content-inner">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="leftmenu">
+
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no_padding" id="leftNav">
+                                <nav class="widget" id="">
+                                    
+
+                                    <div>
+                                        <input id="" type="button" class="searchButton" searchtype="caselaw" value="Caselaw Search" />
+                                    </div>
+                                    <div>
+                                        <input id="" type="button" class="searchButton left_side_menu_margin" searchtype="statutes" value="Statutes Search" />
+                                    </div>
+                                    <div>
+                                        <input id="" type="button" class="searchButton left_side_menu_margin" searchtype="courtwise" value="Courtwise Search" />
+                                    </div>
+                                    <div>
+                                        <input id="" type="button" class="searchButton left_side_menu_margin" searchtype="citation" value="Citation Search" />
+                                    </div>
+                                    <div>
+                                        <input id="" type="button" class="searchButton left_side_menu_margin" searchtype="advance" value="Advance Search" />
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <div class="col-md-12 col-lg-12 hidden-sm hidden-xs no_padding" id="leftBottomContent" style="margin-top: 10px">
+                                <div id="leftMenuWhatsNew" class="">
+                                    <h4 class="align_center" style="color: #333; font-weight: bold; font-size: 100%">Head Notes on Cases With Complete Judgements</h4>
+                                    <div id="whatsNewContent">
+                                        
+                                        <table id="whatsNewTable" class="table table-striped table-bordered table-hover" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2" style="text-align: center;">May</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a>CLC Notes</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a>YLR Notes</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a>PCrLJ Notes</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a>PLC Notes</a></td>
+                                                </tr>
+												<tr>
+                                                    <td><a>PLC(CS) Notes</a></td>
+                                                </tr>
+												
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-lg-12 hidden-sm hidden-xs no_padding" id="leftBottomContent" style="margin-top: 10px">
+                                <div id="leftMenuWhatsNew" class="">
+                                    <h4 class="align_center" style="color: #333; font-weight: bold; font-size: 100%">Monthly Journals</h4>
+                                    <div id="whatsNewContent">
+                                        
+                                        <table id="whatsNewTable" class="table table-striped table-bordered table-hover" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2" style="text-align: center;">May</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a>PLD</a></td>
+                                                    <td><a>SCMR</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a>CLD</a></td>
+                                                    <td><a>PTD</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a>MLD</a></td>
+                                                    <td><a>CLC</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a>PCrLJ</a></td>
+                                                    <td><a>YLR</a></td>
+                                                </tr>
+                                                
+												 <tr>
+                                                    <td><a>PLC</a></td>
+                                                    <td><a>PLC(CS)</a></td>
+                                                </tr>
+												<tr>
+                                                    <td><a>GBLR</a></td>
+                                                    
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-lg-12 hidden-sm hidden-xs no_padding" style="margin-top: 10px">
+                                <div class="list-group col-md-12 statutes_left_sidebar_main_col">
+                                    <span class="list-group-item active text-center"> <strong>Miscellaneous</strong> </span>
+                                    <a href="#" MiscellaneousType="1" class="list-group-item miscellaneous"><i class="fa fa-angle-right" aria-hidden="true"></i>Circulars</a>
+                                    <a href="#" MiscellaneousType="2" class="list-group-item miscellaneous"><i class="fa fa-angle-right" aria-hidden="true"></i>General Orders</a>
+                                    <a href="#" MiscellaneousType="3" class="list-group-item miscellaneous"><i class="fa fa-angle-right" aria-hidden="true"></i>Notifications</a>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-lg-12 hidden-sm hidden-xs no_padding" style="margin-top: 30px">
+                                <div class="list-group col-md-12 statutes_left_sidebar_main_col">
+                                    <span class="list-group-item active text-center"> <strong>New Statutes</strong> </span>
+                                    <a href="#" onclick="return newStatueSearch('Federal')" class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i>Federal</a>
+                                    <a href="#" onclick="return newStatueSearch('Punjab')" class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i>Punjab</a>
+                                    <a href="#" onclick="return newStatueSearch('KPK')" class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i>KPK</a>
+                                    <a href="#" onclick="return newStatueSearch('Balochistan')" class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i>Balochistan</a>
+                                    <a href="#" onclick="return newStatueSearch('Sindh')" class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i>Sindh</a>
+                                </div>
+                            </div>
+			    <div class="col-md-12 col-lg-12 hidden-sm hidden-xs no_padding" style="margin-top: 30px">
+                                <div class="list-group col-md-12 statutes_left_sidebar_main_col">
+                                    <p><a target="_blank" href="https://play.google.com/store/apps/details?id=oratier.tech.pls&amp;hl=en&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"></a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12" id="searchDiv" style="display:none">
+                            <div class="search_main_div">
+                                <div class="">
+                                    <label class="search_label" id="searchLabel"> Search </label>
+                                    <a href="javascript:void(0)" class="glyphicon glyphicon-question-sign search_help" data-placement="left" rel="tooltip" title='Use quotation marks to get an exact match of your search query, for example, if looking for case law with the phrase "leave to defend", write the phrase "leave to defend" enclosed in quotation marks "". Entering "Court Name" is optional. Use "Advance Search" for more precise results.'></a>
+                                </div>
+                                <div class="input-group quad-input col-md-12 col-lg-12 col-sm-12 col-xs-12">
+
+                                    <input type="text" id="bookSearch" placeholder="Enter Book Title" class="form-control"   />
+                                    <input type="text" id="yearSearch" placeholder="Enter Year YYYY" value="2026" class="form-control" maxlength="4" />
+                                    <input type="text" id="courtSearch" placeholder="Enter Court" class="form-control" />
+                                    <input type="text" id="codeOrPageSearch" placeholder="Enter Code or Page#" class="form-control" />
+                                    <select id="caseLawYear" class="form-control" style="display:none">
+                                        <option value="5">Last 5 Year</option>
+                                        <option value="10">Last 10 Year</option>
+                                        <option value="15">Last 15 Year</option>
+                                        <option value="20">Last 20 Year</option>
+                                        <option value="200">All</option>
+                                    </select>
+
+                                    <span class="input-group-btn" id="btn_hide_on_Citation">
+                                        <button class="btn btn-success caseLaw" id="" type="button">Search</button>
+                                    </span>
+
+                                </div>
+                                <div class="input-group  col-md-12 col-lg-12 col-sm-12 col-xs-12" id="Citation_Advance_Search_div" style="display: none">
+                                    <input type="text" id="judgeSearch" placeholder="Enter judge name" class="form-control advanced_search_inputs" />
+                                    <input type="text" id="lawyerSearch" placeholder="Enter lawyer name" class="form-control advanced_search_inputs" />
+                                    <input type="text" id="partySearch" placeholder="Enter Appellant/Opponent name" class="form-control advanced_search_inputs" />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-success caseLaw" id="" type="button">Search</button>
+                                    </span>
+                                </div>
+                                <div class="row" id="caseLAwErrorNotifier" style="display:none">
+                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                        <span class="text-center text-danger" style="display:block;font-weight:bold;padding-top:10px;">Invalid search, please refine your search</span>
+                                    </div>
+
+                                </div>
+                                <div class="row" id="courtwiseYearErrorNotifier" style="display:none">
+                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                        <span class="text-center text-danger" style="display:block;font-weight:bold;padding-top:10px;">Invalid search, please enter valid year</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+
+                            <div class="citationSearchDiv">
+                                <div class="citation_search_main_content_div">
+                                    
+
+                                    <div class="col-lg-12 col-sm-12 col-xs-12 no-padding" id="index_search_content">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no_padding">
+                                            <label class="advance_search_label"> Index Search </label>
+                                            <a href="javascript:void(0)" class="glyphicon glyphicon-question-sign search_help" data-placement="left" rel="tooltip" title='Use quotation marks to get an exact match of your search query, for example, if looking for case law with the phrase "leave to defend", write the phrase "leave to defend" enclosed in quotation marks "". Entering "Court Name" is optional. Use "Advance Search" for more precise results.'></a>
+                                        </div>
+                                        <div class="col-md-11 col-lg-11 col-sm-11 col-xs-12 no_padding">
+                                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 no_padding">
+                                                <select id="Index_Category_Search_dropdown" class="form-control dropdown_css xs_input_margin">
+                                                    <option value="CLC">CLC</option>
+                                                    <option value="CLCN">CLCN</option>
+                                                    <option value="CLD">CLD</option>
+                                                    <option value="GBLR">GBLR</option>
+                                                    <option value="MLD">MLD</option>
+                                                    <option value="PLD">PLD</option>
+                                                    <option value="PCRLJ">PCRLJ</option>
+                                                    <option value="PCRLJN">PCRLJN</option>
+                                                    <option value="PLC">PLC</option>
+                                                    <option value="PLC(CS)">PLC(CS)</option>
+                                                    <option value="PLC(CS)N">PLC(CS)N</option>
+													<option value="PLC N">PLCN</option>
+							<option value="PTD">PTD</option>
+                                                    <option value="SCMR">SCMR</option>
+                                                    <option value="YLR">YLR</option>
+                                                    <option value="YLRN">YLRN</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-6 no_padding">
+                                                <input type="text" id="Index_Year_Search_input" placeholder="Enter Year (required)" value="2026" class="form-control xs_input_margin" maxlength="4" />
+                                            </div>
+                                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-6 no_padding">
+                                                <input type="text" id="Index_Court_Search_input" placeholder="Enter Court" class="form-control xs_input_margin" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-1 col-lg-1 col-sm-1 col-xs-12 no_padding xs_center_align_col">
+                                            <span class="input-group-btn xs_input_group">
+                                                <button class="btn btn-success Index_Search_btn" id="" type="button">Search</button>
+                                            </span>
+                                        </div>
+                                        <div class="row" id="indexYearErrorNotifier" style="display:none">
+                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                <span class="text-center text-danger" style="display:block;font-weight:bold;padding-top:10px;">Invalid search, please enter valid year</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no-padding" id="citation_search_content">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no_padding">
+                                            <label class="advance_search_label"> Citation Search </label>
+                                            
+                                        </div>
+                                        <div class="col-md-11 col-lg-11 col-sm-11 col-xs-12 no_padding">
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6 no_padding">
+                                                <select id="Citation_Category_Search_dropdown" class="form-control dropdown_css xs_input_margin">
+                                                    <option value="CLC">CLC</option>
+                                                    <option value="CLCN">CLCN</option>
+                                                    <option value="CLD">CLD</option>
+                                                    <option value="GBLR">GBLR</option>
+                                                    <option value="MLD">MLD</option>
+                                                    <option value="PLD">PLD</option>
+                                                    <option value="PCRLJ">PCRLJ</option>
+                                                    <option value="PCRLJN">PCRLJN</option>
+                                                    <option value="PLC">PLC</option>
+													<option value="PLC N">PLCN</option>
+                                                    <option value="PLC(CS)">PLC(CS)</option>
+                                                   	<option value="PLC(CS)N">PLC(CS)N</option> 
+													<option value="PTD">PTD</option>
+                                                    <option value="SCMR">SCMR</option>
+                                                    <option value="YLR">YLR</option>
+                                                    <option value="YLRN">YLRN</option>
+												
+
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6 no_padding">
+                                                <input type="text" id="Citation_Year_Search_input" placeholder="Enter Year (required)" value="2026" class="form-control xs_input_margin" maxlength="4" />
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6 no_padding">
+                                                <input type="text" id="Citation_Court_Search_input" placeholder="Enter Court" class="form-control xs_input_margin" />
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6 no_padding">
+                                                <input type="text" id="Citation_Code_Or_Page_Search_input" placeholder="Enter Code or Page#" class="form-control xs_input_margin" />
+                                            </div>
+
+                                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 no_padding">
+                                                <input type="text" id="Citation_Judge_Search_input" placeholder="Enter judge name" class="form-control xs_input_margin" />
+                                            </div>
+                                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 no_padding">
+                                                <input type="text" id="Citation_Lawyer_Search_input" placeholder="Enter lawyer name" class="form-control xs_input_margin" />
+                                            </div>
+                                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 no_padding">
+                                                <input type="text" id="Citation_Party_Search_input" placeholder="Enter Appellant/Opponent name" class="form-control xs_input_margin" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-1 col-lg-1 col-sm-1 col-xs-12 no_padding xs_center_align_col">
+                                            <span class="input-group-btn citation_search_btn_top_margin xs_input_group">
+                                                <button class="btn btn-success Citation_Search_btn" id="" type="button">Search</button>
+                                            </span>
+                                        </div>
+                                        <div class="row" id="citationYearErrorNotifier" style="display:none">
+                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                <span class="text-center text-danger" style="display:block;font-weight:bold;padding-top:10px;">Invalid search, please enter valid year</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="advanceSearchDiv">
+                                <div class="advance_search_main_content_div">
+                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no_padding">
+                                        <label class="advance_search_label"> Advance Search </label>
+                                        <a href="javascript:void(0)" class="glyphicon glyphicon-question-sign search_help" data-placement="left" rel="tooltip" title='Use quotation marks to get an exact match of your search query, for example, if looking for case law with the phrase "leave to defend", write the phrase "leave to defend" enclosed in quotation marks "". Entering "Court Name" is optional. Use "Advance Search" for more precise results.'></a>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no_padding">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6 no_padding">
+                                            <input type="text" id="Advance_Court_Name_Search_input" placeholder="Enter Court Name" class="form-control xs_input_margin" />
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6 no_padding">
+                                            <input type="text" id="Advance_Judge_Search_input" placeholder="Enter Judge Name" class="form-control xs_input_margin" />
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6 no_padding">
+                                            <input type="text" id="Advance_Lawyer_Search_input" placeholder="Enter Lawyer Name" class="form-control xs_input_margin" />
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6 no_padding">
+                                            <input type="text" id="Advance_Party_Search_input" placeholder="Enter Appellant/Opponent" class="form-control xs_input_margin" />
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 no_padding">
+                                            <input type="text" id="Advance_Keyword_Search_input" placeholder="Enter Keyword" class="form-control xs_input_margin" />
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 no_padding">
+                                            <input type="text" id="Advance_Rule_Search_input" placeholder="Enter Rule" class="form-control xs_input_margin" />
+                                        </div>
+                                        
+                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 no_padding">
+                                            <input type="text" id="Advance_Act_Search_input" placeholder="Enter Act/Ordinance" class="form-control xs_input_margin" />
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 no_padding">
+                                            <input type="text" id="Advance_Section_Name_Search_input" placeholder="Enter Section" class="form-control xs_input_margin" />
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 no_padding">
+                                            <input type="text" id="Advance_Act_Two_Search_input" placeholder="Enter another Act/Ordinance" class="form-control xs_input_margin" />
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 no_padding">
+                                            <input type="text" id="Advance_Section_Name_Two_Search_input" placeholder="Enter another Section" class="form-control xs_input_margin" />
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="row" id="advanceErrorNotifier" style="display:none">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                            <span class="text-center text-danger" style="display:block;font-weight:bold;padding-top:10px;">Invalid search, please refine your search</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                            <span class="advancedSearchNoteSpan">* Please enter at least one-search criteria, and you may add as many for more precise results.</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no_padding align_center">
+                                        <span class="input-group-btn Advanced_Search_Btn_Input_Group">
+                                            <button class="btn btn-success Advance_Search_btn" id="" type="button">Search</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                        </div>
+
+                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12" id="rightmenu">
+                            
+
+
+<div class="col-md-12" id="mainContentParentDiv">
+    <div id="mainContent">
+        <div class="row" id="LatestCaseDetail">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 tablet_screen_no_padding">
+                <h3 class="category-title">
+                    
+                    
+                    <a class="tab_title active" href="Javascript:" style="font-size:14px">Latest Caselaws</a>
+                </h3>
+                <article class="">
+                    <div class="entry-thumbnail">
+                        
+                    </div>
+                    
+                    <ul>
+                            <li caseName="2026I6007" class="latestCaseLaw"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> OMV (PAKISTAN) EXPLORATION G.M.B.H. ISLAMABAD VS COMMISSIONER INLAND REVENUE (LEGAL), ISLAMABAD<span style="color:darkred"><br> 2026 PTD 392 </span><br /><span style="color:green"> (ISLAMABAD)</span></a></li>
+                            <li caseName="2026L3004" class="latestCaseLaw"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Pervaiz alias Irfan VS State<span style="color:darkred"><br> 2026 PCrLJ 134 </span><br /><span style="color:green"> (LAHORE-HIGH-COURT-LAHORE)</span></a></li>
+                            <li caseName="2026P2506" class="latestCaseLaw"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Said Fareen VS State<span style="color:darkred"><br> 2026 MLD 354 </span><br /><span style="color:green"> (PESHAWAR-HIGH-COURT)</span></a></li>
+                            <li caseName="2026Q201" class="latestCaseLaw"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> ZULEKHA VS MUHAMMAD NABI<span style="color:darkred"><br> 2026 CLC 92 </span><br /><span style="color:green"> (QUETTA-HIGH-COURT-BALOCHISTAN)</span></a></li>
+                            <li caseName="2026Q1" class="latestCaseLaw"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> MUHAMMAD AKHTAR MENGAL VS FEDERATION OF PAKISTAN through Secretary Ministry of Interior, Islamabad <span style="color:darkred"><br> 2026 PLD 1 </span><br /><span style="color:green"> (QUETTA-HIGH-COURT-BALOCHISTAN)</span></a></li>
+                            <li caseName="2026F2201" class="latestCaseLaw"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> EMPLOYEES OLD-AGE BENEFITS INSTITUTION, LAHORE  VS MUHAMMAD RAFIQUE<span style="color:darkred"><br> 2026 PLC 107 </span><br /><span style="color:green"> (FEDERAL-CONSTITUTIONAL-COURT)</span></a></li>
+                            <li caseName="2026I4001" class="latestCaseLaw"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Muhammad Zareef Ahmed VS Muhammad Rizwan Tahir Satti<span style="color:darkred"><br> 2026 YLR 22 </span><br /><span style="color:green"> (ISLAMABAD)</span></a></li>
+                            <li caseName="2026L5011" class="latestCaseLaw"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> MANZAR LATIF MIAN VS DEPILEX (PVT.) LTD., through Chief Executive, Ms. Masarrat Misbah<span style="color:darkred"><br> 2026 CLD 479 </span><br /><span style="color:green"> (LAHORE-HIGH-COURT-LAHORE)</span></a></li>
+                            <li caseName="2026S706" class="latestCaseLaw"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> IMRAN VS State<span style="color:darkred"><br> 2026 SCMR 47 </span><br /><span style="color:green"> (SUPREME-COURT)</span></a></li>
+                            <li caseName="2026L2010" class="latestCaseLaw"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> ZAHEER AHMAD KHAN LODHI VS PAKISTAN TELECOMMUNICATION COMPANY LIMITED <span style="color:darkred"><br> 2026 PLC(CS) 549 </span><br /><span style="color:green"> (LAHORE-HIGH-COURT-LAHORE)</span></a></li>
+                    </ul>
+                </article>
+            </div>
+
+            <div id="articleDetail">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 tablet_screen_no_padding">
+                    <h3 class="category-title">
+                        
+                        
+                        <a class="tab_title active" href="Javascript:" style="font-size:14px">Latest from the Journal Section</a>
+                    </h3>
+                    <article class="">
+                        <div class="entry-thumbnail">
+                            
+                        </div>
+                        
+                        <ul>
+                                <li fileId="2026J2" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Entering Uncharted Waters: A Critical Analysis of Sindh&#39;s New Agricultural Income Tax Legislative Regime<span style="color:darkred"><br />Author : Barrister Zeeshan Adhi and M. B. Ashar </span><br /><span style="color:green"> (PLD 2026)</span></a></li>
+                                <li fileId="2026J3" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> A Rights Centered Reset: Reframing Guardianship and Child Custody in Pakistan Through Canadlan and Australian Guidance<span style="color:darkred"><br />Author : Naeem Akhtar </span><br /><span style="color:green"> (PLD 2026)</span></a></li>
+                                <li fileId="2026J4" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Rape, Zina and Fornication<span style="color:darkred"><br />Author : Syed Nasir Ali Shah </span><br /><span style="color:green"> (PLD 2026)</span></a></li>
+                                <li fileId="2026J5" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Artificial Intelligence (AI), Deepfakes and The Emerging Challenges to Justice Systems: A Global and Pakistani Legal Perespective<span style="color:darkred"><br />Author : Sheeraz Ahmed Shaikh  </span><br /><span style="color:green"> (PLD 2026)</span></a></li>
+                                <li fileId="2026J6" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Lawfare and National Security: Artificial Intelligence, Invisible Espionage and The Challenge To Fair Trial<span style="color:darkred"><br />Author : Jawad Hussain Aadil </span><br /><span style="color:green"> (PLD 2026)</span></a></li>
+                                <li fileId="2026J1" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Justice Sector Response to Honour Killings in Pakistan<span style="color:darkred"><br />Author : Kamran Adil and Warda Adil </span><br /><span style="color:green"> (PLD 2026)</span></a></li>
+                                <li fileId="2026J7" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Accountability Through Technology: Reforming Pakistan&#39;s Criminal Justice System through Body-Worn Cameras and Forensic Video Evidence<span style="color:darkred"><br />Author : Dr. Ambreen Aslam </span><br /><span style="color:green"> (PLD 2026)</span></a></li>
+                                <li fileId="2026J8" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Magisterial Cognizance in Private Complaint Vs. State Case: A Procedural Analysis in Pakistan<span style="color:darkred"><br />Author : Nida Zahid </span><br /><span style="color:green"> (PLD 2026)</span></a></li>
+                                <li fileId="2025J1" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Challanges Faced By Family Courts In Pakistan: An Examination Of The Legal And Social Landscape
+<span style="color:darkred"><br />Author : Fahad Ahmad Siddiqi </span><br /><span style="color:green"> (PLD 2025)</span></a></li>
+                                <li fileId="2025J2" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> &quot;There Is No Honor In Killing: Understanding And Eradicating Honor-Based Crimes&quot;<span style="color:darkred"><br />Author : Saba Mehwish Memon </span><br /><span style="color:green"> (PLD 2025)</span></a></li>
+                                <li fileId="2025J3" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> The AI Legal Challenge: Balancing Progress And Security in Tackling Unauthorized Access<span style="color:darkred"><br />Author : Umar Shahid </span><br /><span style="color:green"> (PLD 2025)</span></a></li>
+                                <li fileId="2025J4" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Gaps in Pakistan&#39;s Child Custody Laws<span style="color:darkred"><br />Author : Samreen Saba </span><br /><span style="color:green"> (PLD 2025)</span></a></li>
+                                <li fileId="2025J5" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Ownership in Urbanized Shamilat<span style="color:darkred"><br />Author : Muhammad Masood Asghar </span><br /><span style="color:green"> (PLD 2025)</span></a></li>
+                                <li fileId="2025J6" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> &quot;Euthanasia and Dnr Orders: Concepts and Ethics&quot;<span style="color:darkred"><br />Author : Samreen Saba </span><br /><span style="color:green"> (PLD 2025)</span></a></li>
+                                <li fileId="2025J7" class="viewArticle"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Obituary: Malik Muhammad Saeed,
+Patron-in-Chief, PLD Publishers Passes Away<span style="color:darkred"><br />Author : PLD Publishers </span><br /><span style="color:green"> (PLD 2025)</span></a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+            <div id="LatestStatueDetail">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 tablet_screen_no_padding">
+                    <h3 class="category-title">
+                        <a class="tab_title active" href="Javascript:" style="font-size:14px">Latest Statutes</a>
+                    </h3>
+                    <article class="">
+                        <div class="entry-thumbnail">
+                            
+                        </div>
+                        
+                        <ul>
+                                <li caseTypeDesc="Balochistan Boards of Intermediate and Secondary Education Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Balochistan Boards of Intermediate and Secondary Education Act 2019</a></li>
+                                <li caseTypeDesc="Gas (Theft Control and Recovery) Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Gas (Theft Control and Recovery) Act 2019</a></li>
+                                <li caseTypeDesc="Gas (Theft Control and Recovery) Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Gas (Theft Control and Recovery) Act 2019</a></li>
+                                <li caseTypeDesc="Pakistan Medical Commission Ordinance 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Pakistan Medical Commission Ordinance 2019</a></li>
+                                <li caseTypeDesc="Azad Jammu and Kashmir Members of the Election Commission (Terms and Conditions) Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Azad Jammu and Kashmir Members of the Election Commission (Terms and Conditions) Act 2019</a></li>
+                                <li caseTypeDesc="Balochistan Chief Minister and Provincial Ministers (Salaries Allowances and Privileges) (Amendment) Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Balochistan Chief Minister and Provincial Ministers (Salaries Allowances and Privileges) (Amendment) Act 2019</a></li>
+                                <li caseTypeDesc="Balochistan Essential Education Services Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Balochistan Essential Education Services Act 2019</a></li>
+                                <li caseTypeDesc="Code of Civil Procedure (Khyber Pakhtunkhwa) (Amendment) Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Code of Civil Procedure (Khyber Pakhtunkhwa) (Amendment) Act 2019</a></li>
+                                <li caseTypeDesc="Khyber Pakhtunkhwa Regional and District Health Authorities Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Khyber Pakhtunkhwa Regional and District Health Authorities Act 2019</a></li>
+                                <li caseTypeDesc="Mir Chakar Khan Rind University of Technology Dera Ghazi Khan Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Mir Chakar Khan Rind University of Technology Dera Ghazi Khan Act 2019</a></li>
+                                <li caseTypeDesc="National Accountability (Second Amendment) Ordinance 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> National Accountability (Second Amendment) Ordinance 2019</a></li>
+                                <li caseTypeDesc="Punjab Probation and Parole Service Ordinance 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Punjab Probation and Parole Service Ordinance 2019</a></li>
+                                <li caseTypeDesc="Sindh Institute of Ophthalmology and Visual Sciences (Amendment) Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Sindh Institute of Ophthalmology and Visual Sciences (Amendment) Act 2019</a></li>
+                                <li caseTypeDesc="Pakistan Medical Commission Ordinance 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Pakistan Medical Commission Ordinance 2019</a></li>
+                                <li caseTypeDesc="Provincial Motor Vehicles (Amendment) Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Provincial Motor Vehicles (Amendment) Act 2019</a></li>
+                                <li caseTypeDesc="Finance Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Finance Act 2019</a></li>
+                                <li caseTypeDesc="Khyber Pakhtunkhwa Control of Narcotic Substances Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Khyber Pakhtunkhwa Control of Narcotic Substances Act 2019</a></li>
+                                <li caseTypeDesc="Khyber Pakhtunkhwa Finance Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Khyber Pakhtunkhwa Finance Act 2019</a></li>
+                                <li caseTypeDesc="Punjab Minimum Wages Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Punjab Minimum Wages Act 2019</a></li>
+                                <li caseTypeDesc="Punjab Regularization of Service (Amendment) Act 2019" class="latestStatue"><a class="login_check_statute_card_anchor" href="#"><span class="fa fa-minus-circle"></span> Punjab Regularization of Service (Amendment) Act 2019</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    $('#home_navbar').addClass('active');
+    $('#words_navbar').removeClass('active');
+    $('#legal_navbar').removeClass('active');
+    $('#maxim_navbar').removeClass('active');
+    $('#bookmark_navbar').removeClass('active');
+
+</script>
+
+<script>
+    //$(document).on('pagebeforechange', function (e, data) {
+    //    var to = $.mobile.path.parseUrl(data.toPage);
+    //    if (typeof to === 'object') {
+    //        var u = to.href;
+    //        if (u === $.mobile.navigate.history.stack[0].url) {
+    //            //alert('You are logged in!');
+    //            var current = "#" + $.mobile.pageContainer.pagecontainer("getActivePage")[0].id;
+    //            window.location.hash += current;
+    //            return false; /* this will stop page change process */
+    //        }
+    //    }
+    //});
+    $(document).ready(function () {
+        try {
+            history.pushState(null, null, "../Login/Check");
+            window.addEventListener('popstate', function () {
+                history.pushState(null, null, "../Login/Check");
+            });
+
+            $(".readMore").hide();
+            $("#readMoreAdvanceSearch").hide();
+
+            $('.searchButton').first().addClass('slectedButton');
+            // $('.searchButton').first().css('background-color', '#366bff');
+            $('#searchDiv').show();
+            //javascript: window.history.go(1);
+            $('.latestStatue').click(function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                var caseName = $(this).attr('caseTypeDesc');
+                $.ajax({
+                    type: 'GET',
+                    url: "/Login/GetStatuesSearch",
+                    data: { "caseName": caseName },
+                    success: function (result) {
+                        //$("html, body").animate({ scrollTop: 0 }, "slow");
+
+                        $('#rightmenu').empty();
+                        $('#rightmenu').html(result);
+                    }
+                });
+            });
+            $('.latestCaseLaw').click(function (event) {
+                var caseName = $(this).attr('caseName');
+                event.preventDefault();
+                event.stopPropagation();
+                $.ajax({
+                    type: 'POST',
+                    url: "/Login/GetCaseFile",
+                    data: { "caseName": $(this).attr('caseName'), "headNotes": 0 },
+                    success: function (result) {
+
+                        $(".ExceptionMessageModalBody1").empty();
+                        $('#titleModalNewAppointment').text('Head Notes');
+                        if (result != "1") {
+                            $(".inner-addon").show();
+                            $("#query").val("");
+                            $("#bookmarkoption").show();
+                            $(".ExceptionMessageModalBody1").html(result);
+                            $(".modalbookmarklogo").attr("modalCaseName", caseName);
+                            $(".modal-body").css('height', '500px');
+                            $("#ExceptionResponseScreen1").modal('show');
+                        } else {
+                            $(".ExceptionMessageModalBody1").html("<b class='error_notify'>Error Code:700 Sorry Something went wrong</b>");
+                            $(".inner-addon").hide();
+                            $("#bookmarkoption").hide();
+                            $(".modal-body").css('height', 'auto');
+                            $("#ExceptionResponseScreen1").modal('show');
+                        }
+                        return false;
+                    }
+                });
+            });
+        } catch (ex) { }
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".readMore").hide();
+    });
+    $(document).ready(function (event) {
+        try {
+            //var path = '../Login/Check';
+            //history.pushState(null, null, path + window.location.search);
+            //window.addEventListener('popstate', function (event) {
+            //    history.pushState(null, null, path + window.location.search);
+            //});
+            $.ajax({
+                type: "GET",
+                url: '/Login/UpdateSubscriber',
+                contentType: "application/json; charset=utf-8",
+
+                //dataType: "json",
+                //async: false,
+                success: function (result) {
+                    if (result != '1') {
+                        $('#update_subscriber').modal('show');
+                        $('#subscriber_modal_body').html(result);
+                        $('.updateSubscriberTitle').text("Update Subscriber");
+                        $(".editProfileBtn").val("Update");
+                        $('#subscriber_modal_body').removeData("validator") /* added by the raw jquery.validate plugin */
+                        $('#subscriber_modal_body').removeData("unobtrusiveValidation");  /* added by the jquery unobtrusive plugin*/
+                        $.validator.unobtrusive.parse('#subscriber_modal_body');
+                        // event.preventDefault();
+                        // event.stopPropagation();
+                    }
+                },
+                error: function (res) {
+                    alert(JSON.stringify(res));
+                    AjaxFailure(res);
+                }
+            });
+            //$('#myModal').modal('show');
+            //$.get("../Login/UpdateSubscriber", function (data) {
+            //    $('#update_subscriber').modal('show');
+            //    $('#subscriber_modal_body').html(data);
+            //});
+
+
+            $('.viewArticle').on('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                var rec = $(this).attr('fileId');
+                $.ajax({
+                    type: 'POST',
+                    url: "/Login/GetArticleFile",
+                    data: { "caseName": rec },
+                    success: function (result) {
+
+                        $(".ExceptionMessageModalBody1").empty();
+                        $('#titleModalNewAppointment').text('Case Description');
+
+                        if (result != "1") {
+                            $(".inner-addon").show();
+                            $(".modal-body").css('height', '500px');
+                            $("#query").val("");
+                            $("#bookmarkoption").hide();
+                            $('#titleModalNewAppointment').text('Article');
+                            $(".ExceptionMessageModalBody1").html(result);
+                            $("#ExceptionResponseScreen1").modal('show');
+                        } else {
+                            $(".ExceptionMessageModalBody1").html("<b class='error_notify'>Error Code:700 Sorry Something went wrong</b>");
+                            $(".inner-addon").hide();
+                            $("#bookmarkoption").hide();
+                            $(".modal-body").css('height', 'auto');
+                            $("#ExceptionResponseScreen1").modal('show');
+                        }
+                    }
+                });
+
+                // alert(rec);
+                
+                //$.get("/Login/ArticleDetail?fileID="+rec, function (data) {
+                //
+                //        $('#articleDetail').empty();
+                //        $('#articleDetail').html(data);
+                //});
+            });
+        } catch (ex) { }
+    });
+</script>
+<script>
+function blinker() {
+    $('.tab_title').fadeOut(500);
+    $('.tab_title').fadeIn(500);
+}
+
+setInterval(blinker, 1000);
+</script>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <input type="button" value="Read More" class="btn btn-success" id="readMoreAdvanceSearch" onclick="return LoadMoreAdvanceSearch()" style="display:none;float:right" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Visible Only on Mobile nad Tablet Screens -->
+                    <div class="row hidden-lg hidden-md visible-sm visible-xs">
+                        <div class="col-xs-12 col-sm-12">
+                            <input type="button" value="Read More" class="btn btn-success readMore" style="display:none;float:right" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 hidden-md hidden-lg" id="leftBottomContent" style="margin-top: 10px">
+                            <div id="leftMenuWhatsNew" class="">
+                                <h4 class="align_center" style="color: #333; font-weight: bold; font-size: 100%">Notes on Cases</h4>
+                                <div id="whatsNewContent">
+                                    
+                                    <table id="whatsNewTable" class="table table-striped table-bordered table-hover" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2" style="text-align: center;">May</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a>CLC Notes</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a>YLR Notes</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a>PCrLJ Notes</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 hidden-md hidden-lg" id="leftBottomContent" style="margin-top: 10px">
+                            <div id="leftMenuWhatsNew" class="">
+                                <h4 class="align_center" style="color: #333; font-weight: bold; font-size: 100%">Journals</h4>
+                                <div id="whatsNewContent">
+                                    
+                                    <table id="whatsNewTable" class="table table-striped table-bordered table-hover" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2" style="text-align: center;">May</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a>PLD</a></td>
+                                                <td><a>SCMR</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a>CLD</a></td>
+                                                <td><a>PTD</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a>MLD</a></td>
+                                                <td><a>PLC</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a>CLC</a></td>
+                                                <td><a>YLR</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a>PCrLJ</a></td>
+                                                <td><a>GBLR</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 hidden-md hidden-lg" style="margin-top: 10px">
+                            <div class="list-group col-md-12 statutes_left_sidebar_main_col">
+                                <span class="list-group-item active text-center"> <strong>Miscellaneous</strong> </span>
+                                <a href="#" MiscellaneousType="1" class="list-group-item miscellaneous"><i class="fa fa-angle-right" aria-hidden="true"></i>Circulars</a>
+                                <a href="#" MiscellaneousType="2" class="list-group-item miscellaneous"><i class="fa fa-angle-right" aria-hidden="true"></i>General Orders</a>
+                                <a href="#" MiscellaneousType="3" class="list-group-item miscellaneous"><i class="fa fa-angle-right" aria-hidden="true"></i>Notifications</a>
+
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 hidden-md hidden-lg" style="margin-top: 30px">
+                            <div class="list-group col-md-12 statutes_left_sidebar_main_col">
+                                <span class="list-group-item active text-center"> <strong>New Statutes</strong> </span>
+                                <a href="#" onclick="return newStatueSearch('Federal')" class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i>Federal</a>
+                                <a href="#" onclick="return newStatueSearch('Punjab')" class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i>Punjab</a>
+                                <a href="#" onclick="return newStatueSearch('KPK')" class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i>KPK</a>
+                                <a href="#" onclick="return newStatueSearch('Balochistan')" class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i>Balochistan</a>
+                                <a href="#" onclick="return newStatueSearch('Sindh')" class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i>Sindh</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row hidden-sm hidden-xs visible-lg visible-md">
+                        <div class="col-lg-12 col-md-12">
+                            <input type="button" value="Read More" class="btn btn-success readMore" style="display:none;float:right" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Starts -->
+        <footer id="footer-bottom">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="copyright">
+                    <span>
+                        Copyrights &copy; 2026 by <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a><br>
+                        This site is developed &amp; maintained <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer_page_links">
+                <nav id="sub-menu">
+                    <ul>
+                        <li><a href="/Login/HelpPage">Help</a></li>
+                        <li><a data-toggle="modal" data-target="#FAQFormModal" style="cursor:pointer">FAQ's</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        <!-- Footer Bottom Ends -->
+    </div>
+    <div id="FeedBackFormModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content modal-md">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="feedbackTitle">Feedback</h4>
+                </div>
+                <div class="modal-body" id="feedBackFormBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="FAQFormModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content modal-md">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="faqTitle">Frequently Asked Questions (FAQs)</h4>
+                </div>
+                <div class="modal-body" id="faqFormBody" style="height: 450px!important; max-height: 450px!important; overflow-y: scroll!important">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="faqQuestion">What content is available on Pakistanlawsite?</p>
+                            <p class="faqAnswer">Pakistanlawsite.com contains the complete content (including but not limited to case-law, statutes, academic articles, notifications, circulars etc) that has been published in the law-reporting journals of PLD Publishers, since the inception of the same.</p>
+
+                            <p class="faqQuestion">Is content from other publishers of law journals or law reports besides that of PLD Publishers, available on Pakistanlawsite?</p>
+                            <p class="faqAnswer">No. Pakistanlawsite exclusively contains content published by PLD Publishers. Law Reporting Journals published by PLD Publishers are considered to be the most reliable, authentic and comprehensive for research on Pakistani case law. Please visit <a href="http://www.pldpublishers.com/" target="_blank">www.pldpublishers.com</a> for more details.</p>
+                        
+                            <p class="faqQuestion">Is access to Pakistanlawsite.com subject to terms and conditions?</p>
+                            <p class="faqAnswer">Yes. Access to Pakistanlawsite is offered in terms of our <a data-toggle="modal" data-target="#terms_conditions_modal" style="cursor: pointer">Terms and Conditions of Acceptable Use</a>. We emphasize that all worthy patrons read the Terms and Conditions of Acceptable Use before obtaining subscription.</p>
+
+                            <p class="faqQuestion">Forgot your username, password or account number?</p>
+                            <p class="faqAnswer">If you have forgotten your Pakistanlawsite.com username, password or account number, e-mail us or call our Customer Care Office. Lines are open Mondays through Saturday, 9am to 5pm.</p>
+
+                            <p class="faqQuestion">What happens after my subscription period expires?</p>
+                            <p class="faqAnswer">After a customer’s subscription period ends, access to Pakistanlawsite is disabled until the customer renews the subscription. Timely invoices, reminders and receipts for payments are sent by post to all our customers. Please ensure that your contact details are correctly entered at the time or registration and in case of any changes to the same, please convey them our Customer Care Staff.</p>
+
+                            <p class="faqQuestion">I have emailed regarding an issue with my subscription account but received no response?</p>
+                            <p class="faqAnswer">We recommend that you quote your username or account number in all correspondence in order to enable us to address your query / complaint in a timely manner.</p>
+
+                            <p class="faqQuestion">Do you offer institutional IP-authenticated access for use of multiple individuals at the same time?</p>
+                            <p class="faqAnswer">Currently we do not offer institutional or multiple-use accounts.</p>
+
+                            <p class="faqQuestion">What do I do if I have suggestions / complaints regarding the functionality of Pakistanlawsite?</p>
+                            <p class="faqAnswer">We welcome feedback on improving our services and endeavor to make Pakistanlawsite.com as user friendly as possible. Similarly, we wish to address all complaints promptly. Please email or call us if you have any suggestions / complaints.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms_conditions_modal" class="modal fade" role="dialog" style="padding: 0px">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Terms &amp; Conditions</h4>
+                </div>
+                <div class="modal-body" style="padding: 15px 25px; text-align: justify">
+                    <p> Your access to and use of pakistanlawsite.com ("Pakistanlawsite"), an online legal research service, is subject to the terms and conditions of the agreement below ("the Agreement"). To gain access to Pakistanlawsite, read the Agreement carefully. If you agree with all the terms of the Agreement, check "I Agree" to gain access to Pakistanlawsite.com. If you do not agree with any or all the terms of the Agreement do not check "I Agree" and you will not be provided access to Pakistanlawsite. By completing the registration process, you become an authorized user ("User") of Pakistanlawsite. By selecting the "I Agree" checkbox and using Pakistanlawsite, you agree to be bound by the terms and conditions of the Agreement set forth below:</p>
+                    <p><strong>1.</strong> User represents that he or she is authorized to use Pakistanlawsite and User agrees to not share his or her password with anyone not authorized to use Pakistanlawsite. User hereby represents that he or she shall be solely and exclusively responsible if User’s access is deactivated as a result of multiple use, lifting of data, use not constituting fair usage of the website, and/or if an unauthorized third party changes User’s password. User hereby agrees that his/her access to Pakistanlawsite may be terminated if malicious multiple user activity is detected on his or her account. <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a> reserves the right to deactivate any User’s access to Pakistanlawsite at any time without assigning any reason.</p>
+                    <p><strong>2.</strong> User agrees to make an advance quarterly or yearly payment according to the prevailing tariff to <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a> for use of Pakistanlawsite, and the same entitles User to use of the website, in accordance with our fair usage policy.</p>
+                    <p><strong>3.</strong> User is responsible for maintaining the confidentiality of the password and account and is fully responsible for all activities that occur under User’s password or account. You agree to (a) immediately notify <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a> of any unauthorized use of your password or account or any other breach of security, and (b) ensure that you log out from your account at the end of each session. <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a> cannot and will not be liable for any loss, damage or depletion of the allowed hours per month arising from User’s failure to comply with the Agreement.</p>
+                    <p><strong>4.</strong> User must not copy, download, scrape, print, store, publish, transmit, retransmit, transfer, distribute, disseminate, broadcast, circulate, sell or otherwise use the Data, or any portion of the Data, in any form or by any means except as permitted under the Agreement.</p>
+                    <p><strong>5.</strong> User is expressly prohibited from downloading any data and no content available on Pakistanlawsite may be stored or used in an archival database or other searchable database. You shall not sell, license, sublicense or distribute data (including printouts and downloaded data) to third parties or use data as a component of or as a basis for any material offered for sale, license or distribution.</p>
+                    <p><strong>6.</strong> Pakistanlawsite, including the format, layout and data structures, is the exclusive property of <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a> and PLD Publishers. You may not reverse engineer or otherwise attempt to discern such proprietary architecture. Except for the license granted in the Agreement, all rights, title and interest in Data, in all languages, formats and media shall continue to remain the exclusive property of <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a> and PLD Publishers.</p>
+                    <p><strong>7.</strong> Disclaimer of Warranties and Limitation of Liability:</p>
+                    <p style="margin-left:25px;"><strong>a.</strong> Except as specifically provided herein, access to Pakistanlawsite is provided “as is,” without warranty of any kind, express or implied, including, but not limited to, warranties of performance, merchantability, fitness for a particular purpose, accuracy, omissions, completeness, currentness and delays. In no event shall <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a> or PLD Publishers be liable to user for any claim(s) relating in any way to (i) user’s inability or failure to perform research or related work or to perform such work properly or completely, even if assisted by <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a> or any representatives of PLD Publishers, or any decision made or action taken by User in reliance upon data; (ii) any lost profits, professional fees or other consequential, exemplary, incidental, indirect or special damages relating in whole or in part to User’s rights hereunder or use of, or inability to use, Pakistanlawsite, even if <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a> or PLD Publishers have been advised of the possibility of such damages; or (iii) the procuring, compiling, interpreting, editing, writing, reporting or delivering data.</p>
+                    <p style="margin-left:25px;"><strong>b.</strong> Oratier Technologies and PLD Publishers shall have no liability whatsoever for any claim(s) relating in any way to any third party feature further, or for any claim, action, liability or damage relating in any way to User’s access to and use of the internet, including any internet links or URLs provided on or through Pakistanlawsite or any error or omission in any citation given on Pakistanlawsite.</p>
+                    <p style="margin-left:25px;"><strong>c.</strong> No advice or information, whether oral or written, obtained by you from Oratier Technologies through or from the services of shall create any warranty.</p>
+                    <p style="margin-left:25px;"><strong>d.</strong> Neither <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a> nor PLD Publishers make any warranty that access to Pakistanlawsite will be uninterrupted, secure, complete or error free. Neither Oratier Technologies nor PLD Publishers make any warranty as to the accuracy of any citation on Pakistanlawsite. User acknowledges that provision Pakistanlawsite.com entail the likelihood of some human and machine errors, delays, interruptions and losses, including the inadvertent loss of data or damage to media or downtime for site maintenance.</p>
+                    <p><strong>8.</strong> The failure of User or <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a> to enforce any provision hereof shall not constitute or be construed as a waiver of such provision or of the right to enforce it at a later time.</p>
+                    <p><strong>9.</strong> The Agreement constitutes the entire agreement of the parties with respect to its subject matter and replaces and supersedes any prior written or verbal communications, representations, proposals or quotations on that subject matter.</p>
+                    <p><strong>10.</strong> <a href="//oratier.tech" target="_blank">Oratier Technologies (Pvt.) Ltd.</a> reserves the right to modify the terms and conditions of this Agreement as set forth herein, specifically including, but not limited to, the right to impose usage limitations on access to Pakistanlawsite. You are solely responsible for regularly reviewing this Agreement. BY USING Pakistanlawsite AFTER ANY AMENDMENT, YOU AGREE TO BE BOUND BY THE AGREEMENT AS AMENDED. Continued use of Pakistanlawsite after any such changes also constitutes your consent to such changes.</p>
+                </div>
+                <div class="modal-footer center-block">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    //$(document).ready(function(){
+    //    $('[data-toggle="tooltip"]').tooltip();
+    //});
+
+        $('.search_help').tooltip({
+        template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner large"></div></div>'
+    });
+    </script>
+
+    
+
+    
+    <script src="/Scripts/layoutScript.js"></script>
+
+    
+    
+    
+    
+
+
+</body>
+
+
+</html>
