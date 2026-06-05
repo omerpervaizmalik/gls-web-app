@@ -100,12 +100,12 @@ def process_case(session, case_meta, state):
             print("  -> Case text too short or empty")
             return False
             
-        # 2. Insert Judgment Metadata
+        # 2. Insert Judgment Metadata (Upsert)
         headers_db = {
             "apikey": supabase_key,
             "Authorization": f"Bearer {supabase_key}",
             "Content-Type": "application/json",
-            "Prefer": "return=representation"
+            "Prefer": "resolution=merge-duplicates, return=representation"
         }
         
         db_payload = {
@@ -118,9 +118,20 @@ def process_case(session, case_meta, state):
         res = requests.post(f"{supabase_url}/rest/v1/judgments", json=db_payload, headers=headers_db)
         if res.status_code not in (200, 201):
             print(f"  -> Supabase insert failed: {res.text}")
+            # If it's a schema cache error, we must warn them loudly
+            if "schema cache" in res.text:
+                print("=========================================================")
+                print("CRITICAL ERROR: SUPABASE SCHEMA CACHE NOT RELOADED!")
+                print("You MUST run this in the Supabase SQL Editor: NOTIFY pgrst, 'reload schema';")
+                print("=========================================================")
+                sys.exit(1)
             return False
             
-        judgment_id = res.json()[0].get('id')
+        try:
+            judgment_id = res.json()[0].get('id')
+        except:
+            print("  -> Could not extract judgment_id from Supabase response.")
+            return False
         
         # 3. Chunk and Embed
         chunks = chunk_text(text)
@@ -128,16 +139,35 @@ def process_case(session, case_meta, state):
         
         embeddings_data = []
         for chunk in chunks:
-            embeddings_data.append({
-                "judgment_id": judgment_id,
-                "content": chunk,
-                "embedding": embed_text(chunk)
-            })
+            try:
+                embeddings_data.append({
+                    "judgment_id": judgment_id,
+                    "content": chunk,
+                    "embedding": embed_text(chunk)
+                })
+            except Exception as e:
+                if "429" in str(e):
+                    print("  -> Google Gemini Rate Limit (429) hit. Pausing for 60 seconds...")
+                    time.sleep(60)
+                    # Retry once
+                    embeddings_data.append({
+                        "judgment_id": judgment_id,
+                        "content": chunk,
+                        "embedding": embed_text(chunk)
+                    })
+                else:
+                    raise e
             
         # 4. Insert Chunks
         res = requests.post(f"{supabase_url}/rest/v1/document_chunks", json=embeddings_data, headers=headers_db)
         if res.status_code not in (200, 201):
             print(f"  -> Error inserting chunks: {res.text}")
+            if "schema cache" in res.text:
+                print("=========================================================")
+                print("CRITICAL ERROR: SUPABASE SCHEMA CACHE NOT RELOADED!")
+                print("You MUST run this in the Supabase SQL Editor: NOTIFY pgrst, 'reload schema';")
+                print("=========================================================")
+                sys.exit(1)
             return False
             
         print("  -> Upload successful.")
@@ -153,6 +183,9 @@ def process_case(session, case_meta, state):
         
     except Exception as e:
         print(f"  -> Error processing case: {e}")
+        if "429" in str(e):
+            print("  -> Massive Rate Limit Hit. Sleeping for 2 minutes...")
+            time.sleep(120)
         return False
 
 def main():
@@ -167,6 +200,9 @@ def main():
     print("Fetching dashboard for latest cases...")
     headers = {"User-Agent": "Mozilla/5.0"}
     r_dash = session.get("https://pakistanlawsite.com/Home/Dashboard", headers=headers, verify=False)
+    if r_dash.status_code == 404:
+        r_dash = session.get("https://pakistanlawsite.com/", headers=headers, verify=False)
+        
     soup = BeautifulSoup(r_dash.text, 'html.parser')
     
     cases = []
