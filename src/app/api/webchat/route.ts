@@ -91,18 +91,18 @@ export async function POST(req: NextRequest) {
             model: "gemini-embedding-2", 
         });
 
-        // Load vector store via static import
-        const vectorDB = require('../../../../vector_store.json');
-
-        // Retrieve top 5 matches
+        // Retrieve top 5 matches via Supabase pgvector
         const queryEmbedding = await embeddings.embedQuery(msg_body);
-        const scoredDocs = vectorDB.map((doc: any) => ({
-            ...doc,
-            score: cosineSimilarity(queryEmbedding, doc.embedding)
-        }));
         
-        scoredDocs.sort((a: any, b: any) => b.score - a.score);
-        const topDocs = scoredDocs.slice(0, 5);
+        const { data: topDocs, error } = await supabase.rpc('match_document_chunks', {
+            query_embedding: queryEmbedding,
+            match_threshold: 0.5,
+            match_count: 5
+        });
+        
+        if (error) {
+            console.error("Supabase Vector Search Error:", error);
+        }
         const context = topDocs.map((doc: any) => doc.content).join("\n\n");
 
         // Check if user is requesting a human

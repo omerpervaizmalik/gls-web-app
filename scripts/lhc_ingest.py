@@ -141,6 +141,7 @@ if __name__ == "__main__":
         print(f"Processing case: {case['title']}")
         
         # Insert metadata into Supabase immediately
+        judgment_id = None
         try:
             # Parse date if possible
             upload_dt = None
@@ -155,7 +156,7 @@ if __name__ == "__main__":
                     "apikey": supabase_key,
                     "Authorization": f"Bearer {supabase_key}",
                     "Content-Type": "application/json",
-                    "Prefer": "resolution=merge-duplicates"
+                    "Prefer": "return=representation"
                 }
                 payload = {
                     "title": case["title"],
@@ -164,7 +165,11 @@ if __name__ == "__main__":
                     "upload_date": upload_dt
                 }
                 res = requests.post(f"{supabase_url}/rest/v1/judgments", headers=headers_supa, json=payload, verify=False)
-                if res.status_code not in (200, 201):
+                if res.status_code in (200, 201):
+                    data = res.json()
+                    if len(data) > 0:
+                        judgment_id = data[0].get('id')
+                else:
                     print(f"Supabase insert failed: {res.text}")
         except Exception as e:
             print(f"Failed to insert into supabase: {e}")
@@ -181,17 +186,31 @@ if __name__ == "__main__":
         chunks = chunk_text(full_context)
         print(f"  -> Split into {len(chunks)} chunks.")
         
+        embeddings_data = []
         for i, chunk in enumerate(chunks):
             embedding = embed_text(chunk)
-            vector_store.append({
-                "title": case["title"],
+            embeddings_data.append({
+                "judgment_id": judgment_id,
                 "content": chunk,
                 "embedding": embedding
             })
             new_docs_added += 1
             
+        # Insert into Supabase (document_chunks)
+        if supabase_url and supabase_key:
+            headers_db = {
+                "apikey": supabase_key,
+                "Authorization": f"Bearer {supabase_key}",
+                "Content-Type": "application/json"
+            }
+            print(f"  -> Uploading {len(embeddings_data)} chunks to Supabase pgvector...")
+            res = requests.post(f"{supabase_url}/rest/v1/document_chunks", json=embeddings_data, headers=headers_db, verify=False)
+            if res.status_code not in (200, 201):
+                print(f"  -> Error inserting chunks: {res.text}")
+            else:
+                print("  -> Upload successful.")
+            
     if new_docs_added > 0:
-        save_vector_store(vector_store)
-        print(f"Successfully added {new_docs_added} new chunks to vector store!")
+        print(f"Successfully added {new_docs_added} new chunks to Supabase pgvector!")
     else:
         print("No new data added.")

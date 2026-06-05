@@ -186,12 +186,24 @@ def process_case(session, case_meta):
     for chunk in chunks:
         embedding = embed_text(chunk)
         embeddings_data.append({
-            "id": judgment_id,
-            "text": chunk,
+            "judgment_id": judgment_id,
+            "content": chunk,
             "embedding": embedding
         })
-        
-    return embeddings_data
+    
+    # Insert into Supabase (document_chunks)
+    headers_db = {
+        "apikey": supabase_key,
+        "Authorization": f"Bearer {supabase_key}",
+        "Content-Type": "application/json"
+    }
+    
+    print(f"  -> Uploading {len(embeddings_data)} chunks to Supabase pgvector...")
+    res = requests.post(f"{supabase_url}/rest/v1/document_chunks", json=embeddings_data, headers=headers_db)
+    if res.status_code not in (200, 201):
+        print(f"  -> Error inserting chunks: {res.text}")
+    else:
+        print("  -> Upload successful.")
 
 def main():
     print("=== Pakistan Law Site Ingestion Pipeline ===")
@@ -205,26 +217,10 @@ def main():
     # Process only top 2 for testing
     cases_to_process = cases[:2]
     
-    all_embeddings = []
     for case in cases_to_process:
-        emb_data = process_case(session, case)
-        if emb_data:
-            all_embeddings.extend(emb_data)
-            
-    if all_embeddings:
-        vector_store_path = os.path.join(os.path.dirname(__file__), '..', 'vector_store.json')
-        try:
-            with open(vector_store_path, 'r', encoding='utf-8') as f:
-                vector_store = json.load(f)
-        except FileNotFoundError:
-            vector_store = []
-            
-        vector_store.extend(all_embeddings)
+        process_case(session, case)
         
-        with open(vector_store_path, 'w', encoding='utf-8') as f:
-            json.dump(vector_store, f, indent=2)
-            
-        print(f"\nSuccessfully added {len(all_embeddings)} new embeddings to vector_store.json")
+    print("\nPipeline complete!")
 
 if __name__ == "__main__":
     main()
