@@ -1,0 +1,241 @@
+/* Custom AI Chatbot Widget Styles */
+
+:root {
+    --chat-primary: #C8994E; /* Gold */
+    --chat-secondary: #040d21; /* Dark Blue */
+    --chat-bg: #ffffff;
+    --chat-text: #333333;
+    --chat-bubble: #f1f1f1;
+}
+
+#gls-chat-widget-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999999;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#gls-chat-button {
+    width: 60px;
+    height: 60px;
+    background-color: var(--chat-primary);
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+#gls-chat-button:hover {
+    transform: scale(1.05);
+}
+
+#gls-chat-button svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+
+#gls-chat-window {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 350px;
+    height: 500px;
+    max-height: 80vh;
+    background-color: var(--chat-bg);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+#gls-chat-window.open {
+    display: flex;
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#gls-chat-header {
+    background-color: var(--chat-secondary);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#gls-chat-header-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#gls-chat-header-info img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+#gls-chat-header-title {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+
+#gls-chat-header-status {
+    font-size: 12px;
+    color: #4CAF50;
+    margin: 0;
+}
+
+#gls-chat-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#gls-chat-close:hover {
+    opacity: 1;
+}
+
+#gls-chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fafafa;
+}
+
+.gls-message {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.gls-message p {
+    margin: 0 0 8px 0;
+}
+.gls-message p:last-child {
+    margin: 0;
+}
+
+.gls-message.bot {
+    align-self: flex-start;
+    background-color: var(--chat-bubble);
+    color: var(--chat-text);
+    border-bottom-left-radius: 2px;
+}
+
+.gls-message.user {
+    align-self: flex-end;
+    background-color: var(--chat-primary);
+    color: white;
+    border-bottom-right-radius: 2px;
+}
+
+#gls-chat-input-area {
+    padding: 15px;
+    background-color: var(--chat-bg);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    gap: 10px;
+}
+
+#gls-chat-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+#gls-chat-input:focus {
+    border-color: var(--chat-primary);
+}
+
+#gls-chat-send {
+    background-color: var(--chat-primary);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+#gls-chat-send:hover {
+    background-color: #b58842;
+}
+
+#gls-chat-send svg {
+    fill: white;
+    width: 18px;
+    height: 18px;
+    margin-left: 2px;
+}
+
+.gls-typing-indicator {
+    display: flex;
+    gap: 4px;
+    padding: 12px 16px;
+    background-color: var(--chat-bubble);
+    border-radius: 12px;
+    border-bottom-left-radius: 2px;
+    align-self: flex-start;
+    width: fit-content;
+}
+
+.gls-typing-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #999;
+    border-radius: 50%;
+    animation: typing 1.4s infinite ease-in-out both;
+}
+
+.gls-typing-dot:nth-child(1) { animation-delay: -0.32s; }
+.gls-typing-dot:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes typing {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    #gls-chat-window {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        border-radius: 0;
+    }
+}
