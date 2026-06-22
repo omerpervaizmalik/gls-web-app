@@ -52,7 +52,7 @@ B. Territorial Divisions
 8. Power to divide districts into subdivisions. 
     Existing sub-divisions districts maintained. 
  
-C—Courts and offices 
+C-Courts and offices 
  
 9.   Court of Session. 
  
@@ -84,11 +84,11 @@ C—Courts and offices
  
         Subordination of Assistant Sessions Judges to Sessions Judge 
  
-D.—Courts of Presidency Magistrates 
+D.-Courts of Presidency Magistrates 
  
 18-21 [Omitted]. 
  
-E.—Justices of the Peace 
+E.-Justices of the Peace 
 22.   Justice-of the peace for the mufassil. 
  
         Punjab Amendment 
@@ -102,13 +102,13 @@ E.—Justices of the Peace
  
 25.   Ex-Officio Justices of the Peace. 
  
-F.—-Suspension and Removal 
+F.--Suspension and Removal 
 26-27 [Repeated]. 
  
 CHAPTER III 
 POWERS OF COURTS 
  
-A—Description of offences cognizable by each Court 
+A-Description of offences cognizable by each Court 
  
 28.   Offences under Penal code 
  
@@ -135,7 +135,7 @@ B.  Sentences which may be passed by Courts of various Classes.
  
         Maximum term of punishment 
  
-C. —Ordinary and Additional Powers 
+C. -Ordinary and Additional Powers 
  
 36.   Ordinary powers of Magistrates.    . 
  
@@ -143,7 +143,7 @@ C. —Ordinary and Additional Powers
  
 38.   Control of District Magistrate's investing power. 
  
-D.—Conferment, Continuance and Cancellation of Powers 
+D.-Conferment, Continuance and Cancellation of Powers 
  
 39.   Mode of conferring powers.  
  
@@ -176,7 +176,7 @@ CHAPTER V
  
 OF ARREST, ESCAPE AND RETAKING 
  
-A.—Arrest generally   
+A.-Arrest generally   
  
 46.   Arrest how made.                      . 
         Resisting endeavour to arrest. 
@@ -251,7 +251,7 @@ A ---Summons
  
 74.   Proof of service in such cases and when serving officer not present. 
  
-B:— Warrant of Arrest 
+B:- Warrant of Arrest 
  
 75.   Form of warrant of arrest. 
  
@@ -284,7 +284,7 @@ B:— Warrant of Arrest
  
 86-A. Procedure for removal in custody to Tribal Areas. 
  
-C.—Proclamation and Attachment 
+C.-Proclamation and Attachment 
  
 87.   Proclamation for person absconding. 
  
@@ -292,7 +292,7 @@ C.—Proclamation and Attachment
  
 89.   Restoration of attached property. 
  
-D.—Other Rules regarding Processes 
+D.-Other Rules regarding Processes 
  
 90.   Issue of warrant in lieu of or in addition to summons. 
  
@@ -302,7 +302,7 @@ D.—Other Rules regarding Processes
  
 93.   Provisions of this Chapter general applicable to summons and warrants of arrest.- 
  
-E— Special Rules regarding processes issued for service or execution 
+E- Special Rules regarding processes issued for service or execution 
 outside Pakistan and processes received from outside Pakistan for service 
 or execution within Pakistan 
  
@@ -318,7 +318,7 @@ OF PROCESSES TO COMPELL THE PRODUCTION OF DOCUMENTS
 AND OTHER MOVABLE PPORERTYAND FOR THE DISCOVERY OF 
 PERSONS WRONGFULLY CONFINED 
  
-A.—Summons to produce 
+A.-Summons to produce 
  
 94.   Summons to produce document or other thing. 
  
@@ -343,7 +343,7 @@ the same,
 99-E. Evidence to prove nature or tendency of newspaper. 
 99-F. Procedure in High Court. 
 99-G. Jurisdiction barred. 
-C.—Discovery of persons wrongfully confined 
+C.-Discovery of persons wrongfully confined 
  
 100. Search for persons wrongfully confined. 
  
@@ -371,11 +371,11 @@ CHAPTER VIIl
 OF SECURITY FOR KEEPING THE PEACE AND FOR GOOD 
 BEHAVIOUR 
  
-A. —Security for keeping the Peace on Conviction 
+A. -Security for keeping the Peace on Conviction 
  
 106. Security for keeping the peace on conviction. 
  
-B. —Security for Keeping the peace in other cases and security  
+B. -Security for Keeping the peace in other cases and security  
 for good Behaviour 
  
 107. Security for keeping the peace in other cases. 
@@ -406,7 +406,7 @@ for good Behaviour
  
 119. Discharge of person informed against. 
  
-C.—Proceedings in all cases subsequent to order to furnish 
+C.-Proceedings in all cases subsequent to order to furnish 
 security 
  
 120. Commencement of period for which security is required. 
@@ -1651,7 +1651,7 @@ division and may alter the limits of any sub-division.
  
 (2) [Omitted by the Ordinance XXXVII of 2001 dt. 13-8-2001.] 
  
-C. —Courts and offices 
+C. -Courts and offices 
  
 9. Court of Session: (1) The Provincial .Government shall establish a Court of Session 
 for every sessions division, and appoint a Judge of such Court.  
@@ -1954,7 +1954,7 @@ sentence which it is authorised by law to pass.
 Court of any Magistrate may award such terms of imprisonment in default of payment of 
 fine as is authorised by law in case of such default: 
  
-Proviso as to certain cases:- Provided that— 
+Proviso as to certain cases:- Provided that- 
  
 (a) the term is not excess of the Magistrate’s powers under this Code; 
 (b) in any case decided by a Magistrate  where imprisonment has been awarded 
@@ -2017,7 +2017,7 @@ Subs. by Ordinance, XXXVII of 2001, dt. 13-8-2001.
 38. Control  of  District Magistrate's  inventing power: [Omitted by Ordinance, XXXVII of 
 2001- dt. 13-8-2001.] 
  
-D.—Conferment, Continuance and Cancellation of Powers 
+D.-Conferment, Continuance and Cancellation of Powers 
  
 39. Mode of conferring powers: (1) In conferring powers under this Code the Provincial 
 Government may by order empower persons specially by name, or in virtue of their 
@@ -2142,7 +2142,7 @@ Words subs by Ordinance, XXXVIl of 2001, (dt. 13-8-2001).
 CHAPTER V 
  
 OFARREST,ESCAPE AND RETAKING 
-A—Arrest generally 
+A-Arrest generally 
  
 46. Arrest how made: (1) In making an arrest the police officer or other person making 
 the same shall actually touch or confine the body of the person to be arrested, unless 
@@ -2207,7 +2207,7 @@ about his person, and shall deliver all weapons so taken to the Court or officer
 which or whom the officer or person making the arrest is required by this Code to produce 
 the person arrested. 
  
-B.—Arrest without Warrant 
+B.-Arrest without Warrant 
  
 54. When police may arrest without warrant: (1) Any police-officer may, without an 
 order from a Magistrate and without a warrant arrest-- 
@@ -2585,7 +2585,7 @@ committed the offence mentioned in the warrant.
  
 Section 86-A added by Law Reforms Ordinance, XII of 1972. 
  
-C.—Proclamation and Attachment 
+C.-Proclamation and Attachment 
  
 87. Proclamation for person absconding: (1) If any Court is satisfied after taking 
 evidence that any person against whom a warrant has been issued by it has absconded or 
@@ -2618,7 +2618,7 @@ belonging to such person without such district when endorsed by the [Sessions Ju
 within whose district such property is situated.  
  
 (3) If the property ordered to be attached is a debt or other movable property, the 
-attachment under this section shall be made— 
+attachment under this section shall be made- 
  
 (a) by seizure; or                       
  
@@ -2701,7 +2701,7 @@ sale, or, if part only thereof has been sold, the net proceeds of the sale and t
 the property, shall after satisfying thereout all costs incurred in consequence of the 
 attachment, be delivered to him. 
  
-D.—Other Rules regarding Processes 
+D.-Other Rules regarding Processes 
  
 90. Issue of warrant in lieu of, or in addition to summons: A Court may, in any case in 
 which it is empowered by this Code to issue a summons for the appearance of any person 
@@ -2731,7 +2731,7 @@ arrest: The provisions contained in this Chapter relating to a summons and warra
 their issue, service and execution, shall, so far as may be, apply to every summons and 
 every warrant of arrest issued under this Code. 
  
-E — Special Rules regarding processes issued for service or execution 
+E - Special Rules regarding processes issued for service or execution 
 outside Pakistan and processes received from outside Pakistan for service or 
 execution within Pakistan 
  
@@ -2773,7 +2773,7 @@ OF PROCESSES TO COMPEL THE PRODUCTION OF DOCUMENTS AND
 OTHER MOVABLE PROPERTY AND FOR THE DISCOVERY OF 
 PERSONS WRONGFULLY CONFINED 
  
-A—Summons to produce 
+A-Summons to produce 
  
 94. Summons to produce document or other thing: (1) Whenever any Court, or, any 
 officer incharge of a police-station considers that the production of any document or other 
@@ -2814,7 +2814,7 @@ District Superintendent of Police wanted for any such purpose he may require the
 or Telegraph Department, as the case may be, to cause search to be made for and to 
 detain such document, parcel or thing pending the orders of any such Court. 
  
-B. —Search-warrants 
+B. -Search-warrants 
  
 96. When search warrant may be issued: (1) Where any Court has reason to believe 
 that a person to whom a summons or order under Section 94 or a requisition under 
@@ -2993,7 +2993,7 @@ as may be practicable to such applications.
 called in question in any Court otherwise than in accordance with the provisions of 
 Section 99-B. 
  
-C.—Discovery of persons wrongfully confined 
+C.-Discovery of persons wrongfully confined 
  
 100. Search for persons wrongfully confined: If any Magistrate of the First Class has 
 reason to believe that any person is confined under such circumstances that the 
@@ -3047,7 +3047,7 @@ a search under this section, when called upon to do so by any order in writing d
 tendered to him, shall be deemed to have committed an offence under Section 187 of the 
 Pakistan Penal Code. 
  
-E. —Miscellaneous 
+E. -Miscellaneous 
  
 104. Power   to   impound   document, etc., produced: Any Court may, if it thinks fit, 
 impound any document or thing produced before it under this Code. 
@@ -3063,7 +3063,7 @@ CHAPTER VIII
  
 OPSECURITY FOR KEEPING THE PEACE AND FOR GOOD BEHAVIOUR 
  
-A. —Security for keeping the Peace on Conviction 
+A. -Security for keeping the Peace on Conviction 
  
 106. Security for keeping the peace on conviction: (1) Whenever any person accused 
 of any offence punishable under Chapter VIll of the Pakistan Penal Code, other than an 
@@ -3170,7 +3170,7 @@ Punjab and by same Item No- of Islamabad Notification No. S.R.O. 255(i)/96, date
  
 110. Security for good behaviour from habitual offenders: Whenever a [Magistrate of 
 the First Class] receives information that, any person within the local limits of his 
-jurisdiction— 
+jurisdiction- 
  
 (a) is by habit robber, house-breaker, thief or forger, or 
  
@@ -3295,7 +3295,7 @@ bond the Magistrate shall make an entry on the record to that effect, and if suc
 in custody, only for the purpose of the inquiry, shall release him, or, if such person is not in 
 custody, shall discharge him. 
  
-C.—Proceedings in all cases subsequent to order to furnish security 
+C.-Proceedings in all cases subsequent to order to furnish security 
  
 120. Commencement of period for which security is required: (1) If any person, in 
 respect of whom an order requiring security is made under Section 106 or Section 118, 
@@ -4263,7 +4263,7 @@ making it, to the Sessions Judge].
  
 [(5) Notwithstanding anything contained in Sections 60 and 61 or hereinbefore to the 
 contrary, where the accused forwarded under sub-section (2) is a female, the Magistrate 
-shall not except—in the cases involving QatI or dacoity supported by reasons to be 
+shall not except-in the cases involving QatI or dacoity supported by reasons to be 
 recorded in writing, authorise-the detention of the accused in police custody, and the 
 police officer making an investigation shall interrogate the accused referred to in sub-
 section (1) in the prison in the presence of an officer of jail and a female police officer. 
@@ -5284,7 +5284,7 @@ when combined, and for any offence constituted by any one, or more, of such acts
 (4) Nothing contained in this section shall affect the Pakistan Penal Code, Section 71. 
  
 Illustrations 
-to sub-section (1)— 
+to sub-section (1)- 
  
 (a) A rescues B, a person in lawful custody, and in so doing causes grievous hurt to C, a 
 constable in whose custody B was. A may be charged with, and convicted of, offences 
@@ -6372,7 +6372,7 @@ act on the evidence so recorded by his predecessor, or partly recorded by his pr
 and partly, recorded by himself; or he may resummon the witnesses an^ recommence the 
 inquiry or trial; 
  
-Provided that—  
+Provided that-  
  
 (a) where the conviction was held before a Sessions Judge, the High Court; and 
  
@@ -7493,7 +7493,7 @@ Court shall not inflict a greater punishment for the offence which, in the opini
 Court, the accused has committed, than might have been inflicted for such offence by a 
 Magistrate of the First Class.   
  
-(4) Nothing in this section shall be, deemed to authorize a High Court—            
+(4) Nothing in this section shall be, deemed to authorize a High Court-            
  
 (a) To convert a finding of acquittal into one of conviction; or  
  
@@ -8423,7 +8423,7 @@ CHAPTER XLIV
 OF THE TRANSFER OF CRIMINAL CASES 
  
 526. High Court may transfer case or itself try it: (1) Whenever it is made to appear to 
-the High Court— 
+the High Court- 
  
 (a) that a fair and impartial inquiry or trial cannot be had in any Criminal Court subordinate 
 thereto, or    
@@ -15202,7 +15202,7 @@ Day of                                                ,19  .
  
 (Seal)                      (Signature) 
  
-XlII—Warrant of Commitment on Failure to find Security to keep the Peace 
+XlII-Warrant of Commitment on Failure to find Security to keep the Peace 
  
 (See Section 123) 
 To the Superintendent (or Keeper) of the Jail at …………………. 
@@ -15258,7 +15258,7 @@ Given under my hand and the seal of the Court, this    day of              ,19.
  
 (Seal)                                                (Signature) 
  
-XV—Warrant to discharge a Person imprisoned on Failure to give security 
+XV-Warrant to discharge a Person imprisoned on Failure to give security 
  
 (See Sections 123 and 124) 
  
@@ -15279,7 +15279,7 @@ Given under my hand and the seal of the Court, this day of               , 19 .
  
 (Seal)                                                 {Signature} 
  
-XVI.—Order for the Removal of Nuisances 
+XVI.-Order for the Removal of Nuisances 
  
 (See Section 133) 
 To (name, description and address). 
@@ -15330,7 +15330,7 @@ Given under my hand and the seal of the Court this          day of          ,19 
  
 (Seal)                                                (Signature) 
  
-XVII.—-Magistrate's Order constituting a Jury 
+XVII.--Magistrate's Order constituting a Jury 
 (See Section 138) 
  
 WHEREAS on the           day of         ,19 an order was issued to (name) requiring him 
@@ -15345,7 +15345,7 @@ Given under my hand and the seal of the Court, this              day of,  19.
  
 (Seal)                                                 (Signature) 
  
-XVIII.—Magistrate's Notice and Peremptory Order after the Finding by a Jury. 
+XVIII.-Magistrate's Notice and Peremptory Order after the Finding by a Jury. 
  
 (See Section 140) 
 To (name, description and address): 
@@ -15360,7 +15360,7 @@ disobedience thereto.
 Given under my hand and the seal of the Court, this           day of         , 19 .          
 (Seal)                             .                   (Signature) 
  
-XIX.— Injunction to provide against Imminent Danger pending Inquiry by Jury. 
+XIX.- Injunction to provide against Imminent Danger pending Inquiry by Jury. 
  
 (See Section 142) 
 To (name, description and address). 
@@ -15377,7 +15377,7 @@ Given under my hand and the seal of the Court, this          day of   , 19 .
  
 (Seal)                                                                                      (Signature) 
  
-XX.— Magistrate's Order Prohibiting the Repetition, etc. of a nuisance 
+XX.- Magistrate's Order Prohibiting the Repetition, etc. of a nuisance 
  
 (See Section 143) 
 To (name, description and address). 
@@ -15392,7 +15392,7 @@ Given under my hand and the seal of the Court, this           day of   , 19 .
  
 (Seal)                                                 (Signature) 
  
-XXI.—Magistrate's Order to prevent Obstruction, Riot, etc. 
+XXI.-Magistrate's Order to prevent Obstruction, Riot, etc. 
  
 (See Section 144) 
 To (name, description and address). 
@@ -15459,7 +15459,7 @@ Whereas the decision only decides the question of actual physical possession, th
 confers a right on the party from disturbing that possession without taking any steps in due 
 course of law.                   . 
  
-XXlll.— Warrant of Attachment in the Case of a Dispute as to the Possession of 
+XXlll.- Warrant of Attachment in the Case of a Dispute as to the Possession of 
 Land, etc. 
  
 (See Section 146) 
@@ -15542,7 +15542,7 @@ Dated this                    day of              ,19 .
  
 (Signature) 
  
-XXVll—Notice of Commitment by Magistrate to Government Pleader. 
+XXVll-Notice of Commitment by Magistrate to Government Pleader. 
  
 Omitted by L.R.O., 1972, item 213. - 
  
@@ -15640,7 +15640,7 @@ High Court]. On Section 302.
 [In cases tried by Magistrate substitute “within my cognizance” for “within the cognizance 
 of the Court of Session”, and in © omit  "by the said Court”]. 
  
-Secondly —That you on or about the            day of           at            , by causing the death 
+Secondly -That you on or about the            day of           at            , by causing the death 
 of            committed culpable homicide not amounting the murder, and thereby committed 
 an offence punishable under Section 304 of the Pakistan Penal Code, and within the 
 cognizance of the Court of Session [or High Court]. 
@@ -15649,18 +15649,18 @@ cognizance of the Court of Session [or High Court].
 thereby committed an offence punishable under Section 379 of the Pakistan Penal Code 
 and within the cognizance of the Court of Session [or High Court]. On Section 379 & 382. 
  
-Secondly —That you, on or about the           day of         , at            , committed theft 
+Secondly -That you, on or about the           day of         , at            , committed theft 
 having made preparation for causing death to a person in order to the committing of such 
 theft, and thereby committed an offence punishable under Section 382 of the Pakistan, 
 Penal Code and within the cognizance of the Court of Session [or High Court ]. 
  
-Thirdly — That you, on or about the           day of         , at            , committed theft having 
+Thirdly - That you, on or about the           day of         , at            , committed theft having 
 made preparation for causing restraint to a person in order to the effecting of your escape 
 after the committing of such theft, and thereby committed an offence punishable under 
 Section 382 of the Pakistan Penal Code, and within the cognizance of the Court of 
 Session [or High Court.]                                         . 
  
-Fourthly.—That you, on or about the           day of         , at            , committed theft, having 
+Fourthly.-That you, on or about the           day of         , at            , committed theft, having 
 made preparation for causing fear of hurt to a person in order to the retaining of property 
 taken by such theft and thereby committed an offence punishable under Section 382 of 
 the Pakistan Penal Code, and within the cognizance of the Court of Session [or High 
@@ -15744,7 +15744,7 @@ Given under my hand and the seal of the Court,  this day of           19
  
 (Seal)                                                 (Signature) 
  
-XXXI—Summons of Witness 
+XXXI-Summons of Witness 
  
 (See Sections 69 and 252) 
  
@@ -15764,14 +15764,14 @@ Given under my hand and the seal of the Court this          day of        ,19 .
  
 (Seal)                                                (Signature) 
  
-XXXII — Precept to District Magistrate to summon Jurors and Assessors 
+XXXII - Precept to District Magistrate to summon Jurors and Assessors 
  
 Omitted By LRO 1972, item 213 
  
-XXXIII.—Summons to Assessor or Juror 
+XXXIII.-Summons to Assessor or Juror 
 Omitted By LRO 1972, item 213 
  
-XXXIV.—Warrant of Commitment under Sentence of Death 
+XXXIV.-Warrant of Commitment under Sentence of Death 
 (See Section 374) 
  
 To the Superintendent (or Keeper) of the Jail at ………………. 
@@ -15793,7 +15793,7 @@ Given under my hand and the seal of the Court, this,          day of    ,19   .
  
 (Seal)                                                (Signature) 
  
-XXXV.— Warrant of Execution on a Sentence of Death 
+XXXV.- Warrant of Execution on a Sentence of Death 
  
 (See Section 381) 
  
@@ -15815,7 +15815,7 @@ Given under my hand and the seal of the Court, this         day of       ,191.
  
 (Seal)                                                (Signature) 
  
-XXXVI.—Warrant after a Commutation of a Sentence 
+XXXVI.-Warrant after a Commutation of a Sentence 
  
 (See Sections 381 and 382) 
 To the Superintendent (or Keeper) of the Jail at ………………………… 
@@ -15845,7 +15845,7 @@ Given under my hand and the seal of the Court, this           day Of     19 .
 (Seal)                                                (Signature) 
  
  
-XXXVll.—Warrant to levy a Fine by Attachment and Sale 
+XXXVll.-Warrant to levy a Fine by Attachment and Sale 
  
 (See Section 386 [(i) (a)]) 
  
@@ -15893,7 +15893,7 @@ the sum of rupees
  
 (Signature) 
  
-XXXVIII.—Warrant of Commitment in certain cases of Contempt when a Fine is 
+XXXVIII.-Warrant of Commitment in certain cases of Contempt when a Fine is 
 imposed 
  
 (See Section 480) 
@@ -15918,7 +15918,7 @@ of      ,19,
  
 (Seal)                                                 (Signature) 
  
-XXXIX.—Magistrate's or Judge's Warrant of Commitment of witness refusing to 
+XXXIX.-Magistrate's or Judge's Warrant of Commitment of witness refusing to 
 answer 
  
 (See Section 485) 
@@ -15952,11 +15952,11 @@ XLI. Warrant to enforce the Payment of maintenance by Attachment and Sale
 (See Section 488) 
 [Omitted By Ord. XXVII of 1981.] 
  
-XLII.—Bond and Bail bond on a Preliminary Inquiry before a Magistrate 
+XLII.-Bond and Bail bond on a Preliminary Inquiry before a Magistrate 
  
 (Omitted by LRO., 1972 item 273). 
  
-XLIII.—Warrant to discharge a Person Imprisoned on Failure to give Security 
+XLIII.-Warrant to discharge a Person Imprisoned on Failure to give Security 
  
 (See Section 500) 
 To the Superintendent (or Keeper) of the Jail at …………… 
@@ -15974,7 +15974,7 @@ Given under my hand and the seal of the Court, this         day of          19 .
  
 (Seal)                                                      (Signature) 
  
-XLIV.—Warrant of Attachment to enforce a Bond 
+XLIV.-Warrant of Attachment to enforce a Bond 
  
 (See Section 514) 
 To the Police-officer Incharge of the Police-station at ……………. 
@@ -16013,7 +16013,7 @@ Given under my hand and the seal of the Court, this       day of     ,19 .
  
 (Seal)                                                (Signature) 
  
-XLVI.—Notice to Surety of Forfeiture of Bond of Good Behaviour 
+XLVI.-Notice to Surety of Forfeiture of Bond of Good Behaviour 
  
 (See Section 514) 
 To                  
@@ -16031,7 +16031,7 @@ Given under my hand and the seal of the Court, this          day of           , 
  
 (Seal)                                                (Signature) 
  
-XLVII.—Warrant of attachment against a Surety 
+XLVII.-Warrant of attachment against a Surety 
  
 (See Section 314) 
 To                 of 
@@ -16050,7 +16050,7 @@ Given under my hand and the seal of the Court, this           day of          ,1
  
 (Seal)                                                                     (Signature) 
  
-XLVIIl,—-Warrant of Commitment of the Surety of an Accused Person admitted to 
+XLVIIl,--Warrant of Commitment of the Surety of an Accused Person admitted to 
 Bail 
  
 (See Section 514) 

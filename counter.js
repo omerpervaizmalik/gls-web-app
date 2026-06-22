@@ -1,4 +1,4 @@
-// Counter Animation — triggers when stat numbers scroll into view
+// Counter Animation - triggers when stat numbers scroll into view
 (function () {
     function animateCounter(el) {
         var target = parseInt(el.getAttribute('data-target'), 10);

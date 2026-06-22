@@ -4129,7 +4129,7 @@ Ghayr-jaifah:
 (f) munaqqilah 
  
   
-(3) Whoever causes ghayr-jaifah—  
+(3) Whoever causes ghayr-jaifah-  
 (i)  in which the skin is ruptured and bl eeding occurs, is said to cause damiyah; 
 (ii)  by cutting or incising the flesh without exposing the bone, is said to cause 
 badi'ah; 
@@ -6650,7 +6650,7 @@ other's interest: It is not defamation to make an imputation on the character of
 provided that the imputation be made in good faith for the protection of the interest of the 
 person making it, or of any other person, or for the public good.  
 Illustrations 
-(a) A, a shopkeeper, says to B, who manages his business—"Sell nothing to Z unless he 
+(a) A, a shopkeeper, says to B, who manages his business-"Sell nothing to Z unless he 
 pays you ready money, for I have no opinion of his honesty." A is within the exception, 
 if he has made this imputation on Z in good faith for the protection of his own interests. 
   

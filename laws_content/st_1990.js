@@ -2183,7 +2183,7 @@ Sales Tax Act, 1990
  
 45 
  
- 297[11B. Limitation for issuing orders in certain cases. — For the 
+ 297[11B. Limitation for issuing orders in certain cases. - For the 
 purposes of issuing an assessment order or any other order in consequence 
 of or to give effect to any order made by the Commissioner (Appeals), 
 Appellate Tribunal, High Court, or Supreme Court, the provisions of section 
@@ -2210,7 +2210,7 @@ of one year from the date of receipt of decision, modify the assessment or
 order in which the said decision was applied so that it conforms to the final 
 decision.] 
  
-299[11D. Best judgment Assessment. — (1) Where a person,  
+299[11D. Best judgment Assessment. - (1) Where a person,  
 (a)  fails to furnish a sales tax return in response to notice 
 under sub-section (2A) of section 26; or  
  
@@ -2297,7 +2297,7 @@ claim.
 sub-section (1), the amount of tax shall be recovered as tax fraction of the 
 value of supply.  
  
-       11F. Failure to withhold sales tax. — Where any person, required to 
+       11F. Failure to withhold sales tax. - Where any person, required to 
 withhold sales tax under sub -section (7) of section 3, fails to withhold the 
 tax or having withheld the tax fails to deposit the same in the prescribed 
 manner, the officer of Inland Revenue not below the rank of Assistant 
@@ -2305,7 +2305,7 @@ Commissioner shall after a notice to such person to show cause pass an
 order to determine and recover the amount in default and impose penalty 
 and default surcharge under section 33 and 34.  
  
-11G.  Limitation for assessment. — (1) The show cause notice 
+11G.  Limitation for assessment. - (1) The show cause notice 
 under sections 11D to 11F shall be issued within five years, from the end of 
 the financial year in which the relevant date falls.  
   
@@ -2328,7 +2328,7 @@ Sales Tax Act, 1990
  
  
  (3)  For the purpose of sections 11D, 11E and 11F, the words 
-“relevant date” means—  
+“relevant date” means-  
 (a)  the time of payment of sales tax or charge as provided 
 under section 6;  
 (b)  the time of payment for goods or services on which 
@@ -2412,7 +2412,7 @@ Chapter-III
  
 REGISTRATION 
  
- 316[14. Registration.— (1) Every person engaged in making taxable 
+ 316[14. Registration.- (1) Every person engaged in making taxable 
 supplies in Pakistan, including zero -rated supplies, in the course or 
 furtherance of any taxable activity carried on by him, falling in any of the 
 following categories, if not already registered, is required to b e registered 
@@ -2535,7 +2535,7 @@ or order prefer an appeal before the Chief Commissioner Inland Revenue.
 (7) The provisions of this section shall come into force on such 
 date as the Board may notify in the official Gazette.  
  
-14AD. Bar on transfer of Immoveable Property. — (1) Where the 
+14AD. Bar on transfer of Immoveable Property. - (1) Where the 
 person fails to obtain registration within fifteen days from issuance of order 
 under sub -section (4) of section 14AC, the Chief Commissioner shall 
 constitute a committee comprising the Chief Commissioner, Commissioner 
@@ -3610,7 +3610,7 @@ procedure and working of special audit panel.]
  
 454[32AA. ***] 
  
- 45532B. Appointment of experts and auditors. — (1) The Board or 
+ 45532B. Appointment of experts and auditors. - (1) The Board or 
 the Commissioner may appoint as many experts as it or the Commissioner 
 considers necessary for the purposes of this Act, including for the purposes 
 of assistance in audit, investigation, litigation or valuation. 
@@ -4514,7 +4514,7 @@ whether wilfully or otherwise, in time or in the manner specified under this
 Act, rules or notifications issued thereunder or claims a tax credit, refund or 
 makes an adjustment which is not admissible to him, or incorrectly applies 
 the rate of zero per cent to supplies made by him, he shall, in addition to the 
-tax due, pay default surcharge at the rate mentioned below:— 
+tax due, pay default surcharge at the rate mentioned below:- 
   
  (a) 507[...] the person liable to pay any amount of tax or charge or 
 the amount of refund erroneously made, shall pay default 
@@ -4610,7 +4610,7 @@ deemed to be a judicial proceeding within the meaning of section 193 and
  521(4) For the purpose of an inquiry under this Act, the officer of 
 Inland Revenue shall have the powers of a civil court trying a suit under the 
 Code of Civil Procedure, 1908 (Act No. V of 1908), in respect of the 
-following matters, namely:— 
+following matters, namely:- 
  
 (a) summoning and enforcing the attendance of any person 
 and examining him on oath; and 
@@ -4629,7 +4629,7 @@ may initiate an inquiry upon approval by the Commissioner.
 (2) For the purpose of an inquiry under this Act, the officer of 
 Inland revenue shall have the powers of a civil court trying a suit under the 
 Code of Civil Procedure,1908(Act No. V of 1908), in respect of the 
-following matters, namely: — 
+following matters, namely: - 
  
 (a) summoning and enforcing the attendance of any 
 person and examining on oath; and 
@@ -4666,7 +4666,7 @@ obtain prior approval for investigation or the closure of inquiry without any
 further investigation. 
  
 (6) The Commissioner, on the basis of inquiry report under sub-
-section (5) and after recording reasons in writing, shall either — 
+section (5) and after recording reasons in writing, shall either - 
  
 (i) approve initiation of investigation, or 
  
@@ -4695,7 +4695,7 @@ Sales Tax Act, 1990
 89 
  
 (c) it has been established during the course of 
-investigation by the Inquiry Officer that — 
+investigation by the Inquiry Officer that - 
  
 (i) the accused is intentionally or willfully not 
 joining the investigation after three duly 
@@ -4757,7 +4757,7 @@ his release on bail under the provisions contained in sections 497 and 498
 of the Code of Criminal Procedure, 1898 (Act V of 1898). 
  
 (15) The purpose of prosecution under the provisions of sections 
-37A and 37B of this Act shall remain to — 
+37A and 37B of this Act shall remain to - 
  
 (a) create sufficient deterrence against tax fraud; and  
  
@@ -5060,7 +5060,7 @@ Sales Tax Act, 1990
 97 
  
  
- 530[38A. Power to call for information. — The 
+ 530[38A. Power to call for information. - The 
 531[Commissioner] may, by notice in writing, require any person, including 
 a banking company, to furnish such information  or such statement in 
 connection with any investigation or inquiry in cases of tax fraud, as may 
@@ -5985,7 +5985,7 @@ section.
 multilateral convention, and inter -governmental agreement or similar 
 agreement or mechanism for assistance in the recovery of taxes.] 
  
- 646[56AB. Real-time ac cess to information and databases. —(1) 
+ 646[56AB. Real-time ac cess to information and databases. -(1) 
 Notwithstanding anything contained in any law for the time being in force, 
 including but not limited to the National Database and Registration 
 Authority Ordinance, 2000 (Ordinance VIII of 2000), and the Emigration 
@@ -6476,7 +6476,7 @@ of such order, there shall be paid to the claimant in addition to the amount
 of the refund due to him, a further sum equal to KIBOR per annum of the 
 amount of refund, due from the date of the refund order.] 
  
- 683[67A. Payment of refund through sales tax refund bonds. — (1) 
+ 683[67A. Payment of refund through sales tax refund bonds. - (1) 
 Notwithstanding anything contained in section 67, the sales tax refunds 
 payable under this Act may also be paid through sales tax refund bonds to 
 be issued by FBR Refund Settlement Company 684[ ] Limited, in book-entry 
@@ -6741,7 +6741,7 @@ Sales Tax Act, 1990
 deduction, or refund , repayment or draw -back or zero -rating of tax under 
 this Act. 
  
- Explanation— For the purpose of this section, the term “business 
+ Explanation- For the purpose of this section, the term “business 
 bank account” shall mean a bank account utilized by the registered person 
 for business transactions, declared to the 706[Commissioner]  in whose 
 jurisdiction he is registered 707[through Form STR-1 or change of particulars 
@@ -11278,9 +11278,9 @@ System, the above information shall be furnished online against a specific
 user I.D. and password obtained under section 155D of the Customs Act, 
 1969. 
  
- Explanation.— 
+ Explanation.- 
  
-Chief Executive means.— 
+Chief Executive means.- 
  
 1. owner of the firm, in case of sole proprietorship; or 
 2. partner of firm having major share, in case of partnership firm; 
@@ -11841,7 +11841,7 @@ rate specified in the Table in addition to the tax chargeable under
 section 3 of the Act or a notification issued thereunder: 
  
  (2) The value addition tax under this Schedule shall not be charged 
-on,— 
+on,- 
  
  1012[(i) Raw materials and intermediary goods imported by a 
 manufacturer for in -house consumption  1013[excluding 
@@ -11931,7 +11931,7 @@ be carried forward to subsequent tax period.]
 1021[THIRTEENTH SCHEDULE” 
 (Minimum Production) 
 [See sub-section (9AA) of section 3] 
-Minimum production of steel products.— 
+Minimum production of steel products.- 
  
 The minimum production for steel products shall be determined as 
 per criterion specified against each in the Table below: 
@@ -12004,6 +12004,6 @@ distributed power and self -generated power shall be
 determined on the basis of total electricity consumption.] 
  
 ********* 
-PCPPI—4310(19) FBR—19-09-2019—2000. 
+PCPPI-4310(19) FBR-19-09-2019-2000. 
  
  `;

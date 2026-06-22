@@ -998,7 +998,7 @@ issued by any Civil or Revenue Court situate
 and published in Gazette of Pakistan (Extraordinary), dated: 9 June 1960, pp. 725 -845, s. 3 read with the Second Schedule: it 
 came into force on 14 October 1955. 
 2  
-3Provision of s. 29 was applied to— 
+3Provision of s. 29 was applied to- 
 (i) the Civil Courts in the Federation of Malaya in so far as the Chief Commissioner’s Province of Baluchistan and the Capital of 
 the Federation are concerned, see Gazette of Pakistan, 1949, Part. I, p. 258 and ibid., Part II A, p. 68; 
 (ii) all Civil and Revenue Courts of India; and, service by any Civil or Revenue Court of India of any summons issued under the 
@@ -4850,7 +4850,7 @@ Substituted by A.O., 1949, for “British India”.
 Schedule: it came into force on 14 October 1955 for “the Provinces and the Capitalof the Federation” which had been 
 Substituted by A.O., 1949, for “British India”. 
 6 Inserted by the Code of Civil Procedure (Amendment) Act, 1950(68of 1950), s.2(with effect fromthe 1st September, 1951). 
-7 Provisions of s.29have been applied to— 
+7 Provisions of s.29have been applied to- 
 (i) the Civil Courts in the Federation of Malaya in so far as the Ch ief Commissioner’s Province of Baluchistan and the Capitalof 
 the Federation are concerned, see Gaz. of P ., 1949, Pt.I, P .258and ibid., Pt.IIA, P. 68 
 (ii) all Civil and Revenue Courts of India; and service by any Civilor Revenue Court of India of any summons issued under the 
@@ -13433,7 +13433,7 @@ foreclosure is passed), that the whole of the liability of defendant No.1 arisin
 the plaintiff's mortgage or from the mortgage of defendant No.2 or from this suit 
 shall be deemed to have been discharged and extinguished. 
 6. And it is hereby further ordered and decreed (in the case where a sale is 
-ordered under clause 5 above)— 
+ordered under clause 5 above)- 
 (i)  that the money realised by such sale shall be paid into Court and 
 be duly applied (after deduction there­from of the expenses of the sale) first in 
 payment of the amount paid by the plaintiff in respect of defendant No. 2's 
